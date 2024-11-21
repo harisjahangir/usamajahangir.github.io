@@ -18,6 +18,15 @@ document.addEventListener('keydown', (event) => {
   }
 });
 
+window.addEventListener('scroll', function() {
+  var newsBar = document.getElementById('news-bar');
+  if (window.scrollY > 0) {
+    newsBar.style.display = 'none';
+  } else {
+    newsBar.style.display = 'block';
+  }
+});
+
 function filterProjects(category) {
   const projects = document.querySelectorAll(".details-container");
   const buttons = document.querySelectorAll(".project-btn");
