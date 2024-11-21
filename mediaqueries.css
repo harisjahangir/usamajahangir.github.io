@@ -101,3 +101,16 @@
     text-align: justify;
   }
 }
+
+.project-btn.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.details-container {
+  display: none; 
+}
+
+.details-container[style="display: flex;"] {
+  display: flex;
+}
