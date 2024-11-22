@@ -28,22 +28,33 @@ window.addEventListener('scroll', function() {
 });
 
 function filterProjects(category) {
-  const projects = document.querySelectorAll(".details-container");
+  const projects = document.querySelectorAll(".project-card");
   const buttons = document.querySelectorAll(".project-btn");
 
+  // Remove active class from all buttons and add to the clicked button
   buttons.forEach((btn) => btn.classList.remove("active"));
   document
     .querySelector(`.project-btn[onclick*="${category}"]`)
     .classList.add("active");
 
+  // Show or hide projects based on the category
   projects.forEach((project) => {
     if (category === "all" || project.dataset.category === category) {
-      project.style.display = "flex"; 
+      project.style.display = "block"; // Show matching projects
     } else {
-      project.style.display = "none";
+      project.style.display = "none"; // Hide non-matching projects
     }
   });
 }
+
+function showPopup(id) {
+  document.getElementById(id).style.display = "flex";
+}
+
+function closePopup(id) {
+  document.getElementById(id).style.display = "none";
+}
+
 
 // JavaScript to dynamically create bubbles in the profile section
 function createBubbles() {
