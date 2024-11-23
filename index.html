@@ -267,130 +267,475 @@
       <span>
         <button class="btn btn-color-2 project-btn active" onclick="filterProjects('all')">All</button>
         <button class="btn btn-color-2 project-btn" onclick="filterProjects('robotics')">Robotics</button>
+        <button class="btn btn-color-2 project-btn" onclick="filterProjects('embedded')">Embedded</button>
+        <button class="btn btn-color-2 project-btn" onclick="filterProjects('software')">Software</button>
         <button class="btn btn-color-2 project-btn" onclick="filterProjects('electronics')">Electronics</button>
         <button class="btn btn-color-2 project-btn" onclick="filterProjects('mechanical')">Mechanical</button>
-        <button class="btn btn-color-2 project-btn" onclick="filterProjects('software')">Software</button>
       </span>
     </div>
   </div>
 
   <div class="projects-grid">
     <!-- Project Card 1 -->
-    <div class="project-card" data-category="robotics" onclick="showPopup('project1')">
+    <div class="project-card" data-category="robotics" onclick="showPopup('assistiveFeedingSystem')">
       <div class="project-border">
-        <img src="./assets/afs.png" alt="Project 1" class="project-img" style="width: 60%; height: 40%; object-fit: contain;"/>
+        <img src="./assets/afs.png" alt="Assistive Feeding System" class="project-img" style="width: 60%; height: 40%; object-fit: contain; padding-top: 5px;"/>
         <h3 class="project-title">Assistive Feeding System</h3>
-        <p class="project-text">A 6 DOF care giver serial robotic manipulator for feeding food to patients, elderly and the disabled.</p>
+        <p class="project-text">A 3D printed 6 DOF care giver serial robotic manipulator for feeding food to patients, elderly and the disabled. Successfully fed rice to <strong>3</strong> test subjects.</p>
       </div>
     </div>
 
     <!-- Project Card 2 -->
-    <div class="project-card" data-category="electronics" onclick="showPopup('project2')">
+    <div class="project-card" data-category="robotics" onclick="showPopup('opticalFiberSortingRobot')">
       <div class="project-border">
-        <img src="./assets/afs.png" alt="Project 2" class="project-img" style="width: 60%; height: 50%; object-fit: contain;"/>
-        <h3 class="project-title">Smart Prosthetics</h3>
-        <p class="project-text">An advanced prosthetic with integrated sensors for better feedback.</p>
+        <img src="./assets/nda.png" alt="Optical Fiber Sorting Robot" class="project-img" style="width: 100%; height: 100%; object-fit: contain; padding-top: 5px;"/>
+        <h3 class="project-title">Optical Fiber Sorting Robot</h3>
+        <p class="project-text">A robotic system designed for sorting optical fibers with <strong>250 microns</strong> precision increasing throughtput by <strong>87%</strong>.</p>
       </div>
     </div>
 
     <!-- Project Card 3 -->
-    <div class="project-card" data-category="mechanical" onclick="showPopup('project3')">
+    <div class="project-card" data-category="robotics" onclick="showPopup('opticalFiberAssemblyRobot')">
       <div class="project-border">
-        <img src="./assets/afs.png" alt="Project 3" class="project-img" style="width: 60%; height: 50%; object-fit: contain;"/>
-        <h3 class="project-title">Autonomous Vehicle Design</h3>
-        <p class="project-text">A mechanical system designed for self-driving vehicles.</p>
+        <img src="./assets/nda.png" alt="Optical Fiber Assembly Robot" class="project-img" style="width: 100%; height: 100%; object-fit: contain; padding-top: 5px;"/>
+        <h3 class="project-title">Optical Fiber Assembly Robot</h3>
+        <p class="project-text">A robotic system designed for assembling optical fibers with precision upto <strong>1 micron</strong> increasing throught by <strong>4x</strong>.</p>
       </div>
     </div>
 
     <!-- Project Card 4 -->
-    <div class="project-card" data-category="software" onclick="showPopup('project4')">
+    <div class="project-card" data-category="robotics" onclick="showPopup('upperLimbProsthesis')">
       <div class="project-border">
-        <img src="./assets/afs.png" alt="Project 4" class="project-img" style="width: 60%; height: 50%; object-fit: contain;"/>
-        <h3 class="project-title">AI-Powered Diagnostic Tool</h3>
-        <p class="project-text">A software solution using AI to diagnose medical conditions.</p>
+        <img src="./assets/upper-limb-prosthesis.png" alt="Upper Limb Prosthesis" class="project-img" style="width: 80%; height: 80%; object-fit: contain; padding-top: 5px;"/>
+        <h3 class="project-title">Upper Limb Prosthesis</h3>
+        <p class="project-text">A 6 DOF parallel robotic manipulator as upper limb prosthesis. Successfully restored and programmed graping modes</p>
       </div>
     </div>
 
     <!-- Project Card 5 -->
-    <div class="project-card" data-category="robotics" onclick="showPopup('project5')">
+    <div class="project-card" data-category="robotics" onclick="showPopup('indigenousFruitHarvestingRobot')">
       <div class="project-border">
-        <img src="./assets/afs.png" alt="Project 5" class="project-img" style="width: 60%; height: 50%; object-fit: contain;"/>
-        <h3 class="project-title">Robot Arm Control System</h3>
-        <p class="project-text">A robotic system designed for precision control and manipulation.</p>
+        <img src="./assets/nerc.png" alt="Indigenous Fruit Harvesting Robot" class="project-img" style="width: 95%; height: 100%; object-fit: contain; padding-top: 5px;"/>
+        <h3 class="project-title">Indigenous Fruit Harvesting Robot</h3>
+        <p class="project-text">A mobile robot to harvest fruits in an artificial enviorment using 3D printed plucking mechanism. Ended up in <strong>top 16</strong> teams at <strong>National Engineering and Robotics Competition (NERC) 2022</strong> by successfuly completing the tasks.</p>
       </div>
     </div>
 
     <!-- Project Card 6 -->
-    <div class="project-card" data-category="electronics" onclick="showPopup('project6')">
+    <div class="project-card" data-category="robotics" onclick="showPopup('pidLineFollowerRobot')">
       <div class="project-border">
-        <img src="./assets/afs.png" alt="Project 6" class="project-img" style="width: 60%; height: 50%; object-fit: contain;"/>
-        <h3 class="project-title">Smart Home Automation</h3>
-        <p class="project-text">An electronic system designed for home automation and control.</p>
+        <img src="./assets/pid-line-follower.png" alt="PID based line following robot" class="project-img" style="width: 95%; height: 95%; object-fit: contain; padding-top: 5px;"/>
+        <h3 class="project-title">PID based Line Following Robot</h3>
+        <p class="project-text">A robot designed for line following using PID controller.</p>
       </div>
     </div>
 
     <!-- Project Card 7 -->
-    <div class="project-card" data-category="mechanical" onclick="showPopup('project7')">
+    <div class="project-card" data-category="embedded" onclick="showPopup('sensorsApp')">
       <div class="project-border">
-        <img src="./assets/afs.png" alt="Project 7" class="project-img" style="width: 60%; height: 50%; object-fit: contain;"/>
-        <h3 class="project-title">Wind Turbine Design</h3>
-        <p class="project-text">A mechanical system designed for efficient wind energy harvesting.</p>
+        <img src="./assets/sensor.png" alt="Sensors App - Android & Windows" class="project-img" style="width: 95%; height: 95%; object-fit: contain; padding-top: 5px;"/>
+        <h3 class="project-title">Sensors App</h3>
+        <p class="project-text">An app for Android and Windows for sensor data aquisation and monitoring including IMU, Camera and Barcode Scanners. Deployed in smart carts in Qatar.</p>
+      </div>
+    </div>
+
+    <!-- Project Card 8 -->
+    <div class="project-card" data-category="embedded" onclick="showPopup('chargingStation')">
+      <div class="project-border">
+        <img src="./assets/charging-station.png" alt="Charging Station" class="project-img" style="width: 95%; height: 95%; object-fit: contain; padding-top: 5px;"/>
+        <h3 class="project-title">Charging Station</h3>
+        <p class="project-text">An ESP32 based master/slave type system for managing charging/discharging cycle of 24V 100A battery for a smart cart. Deployed in a retail store in Qatar.</p>
+      </div>
+    </div>
+
+    <!-- Project Card 9 -->
+    <div class="project-card" data-category="embedded" onclick="showPopup('uct')">
+      <div class="project-border">
+        <img src="./assets/uct.webp" alt="Unified Checkout Terminal - Android & Windows" class="project-img" style="width: 95%; height: 95%; object-fit: contain; padding-top: 5px;"/>
+        <h3 class="project-title">Unified Checkout Terminal</h3>
+        <p class="project-text">A unified checkout terminal for Android and Windows enabling faster checkout as cashless terminal. Deployed in a retail store in Qatar</p>
+      </div>
+    </div>
+
+    <!-- Project Card 10 -->
+    <div class="project-card" data-category="software" onclick="showPopup('checkoutAccelerator')">
+      <div class="project-border">
+        <img src="./assets/checkout-accelerator.svg" alt="Checkout Accelerator - Windows & Linux" class="project-img" style="width: 95%; height: 95%; object-fit: contain; padding-top: 5px;"/>
+        <h3 class="project-title">Checkout Accelerator</h3>
+        <p class="project-text">A pyhton based application enabling faster checkout at cashier terminals at retail store. Reducing average checkout time of <strong>60s</strong> to <strong>7s</strong>. Deployed in retail store in Qatar.</p>
+      </div>
+    </div>
+
+    <!-- Project Card 11 -->
+    <div class="project-card" data-category="software" onclick="showPopup('chess2')">
+      <div class="project-border">
+        <img src="./assets/chess-2.png" alt="Chess 2.0" class="project-img" style="width: 95%; height: 95%; object-fit: contain; padding-top: 5px;"/>
+        <h3 class="project-title">Chess 2.0</h3>
+        <p class="project-text">A GUI based multiplayer chess game for windows</p>
+      </div>
+    </div>
+
+    <!-- Project Card 12 -->
+    <div class="project-card" data-category="software" onclick="showPopup('deltaUpdator')">
+      <div class="project-border">
+        <img src="./assets/delta-updator.png" alt="Delta Updater" class="project-img" style="width: 80%; height: 80%; object-fit: contain; padding-top: 5px;"/>
+        <h3 class="project-title">Delta Updater</h3>
+        <p class="project-text">A tool for managing and updating retail catalogs by asyncronously update required data and syncing servers.</p>
+      </div>
+    </div>
+
+    <!-- Project Card 13 -->
+    <div class="project-card" data-category="software" onclick="showPopup('cic')">
+      <div class="project-border">
+        <img src="./assets/cic.png" alt="Catalog Integrity Checker" class="project-img" style="width: 80%; height: 80%; object-fit: contain; padding-top: 5px;"/>
+        <h3 class="project-title">Catalog Integrity Checker</h3>
+        <p class="project-text">A tool for schedulled server data integrity checking for discrepencies based on provided reference.</p>
+      </div>
+    </div>
+
+    <!-- Project Card 14 -->
+    <div class="project-card" data-category="software" onclick="showPopup('mdm')">
+      <div class="project-border">
+        <img src="./assets/mdm.png" alt="Mobile Device Management - Android & Linux" class="project-img" style="width: 80%; height: 80%; object-fit: contain; padding-top: 5px;"/>
+        <h3 class="project-title">Mobile Device Management</h3>
+        <p class="project-text">A system for managing custom applications using features including but not limited to device onbaording, application management, A/B Rollback, Over-The-Air (OTA) Updates and data management.</p>
+      </div>
+    </div>
+
+    <!-- Project Card 15 -->
+    <div class="project-card" data-category="software" onclick="showPopup('chess1')">
+      <div class="project-border">
+        <img src="./assets/chess-1.png" alt="Chess 1.0" class="project-img" style="width: 95%; height: 95%; object-fit: contain; padding-top: 5px;"/>
+        <h3 class="project-title">Chess 1.0</h3>
+        <p class="project-text">A command-line-graphics based multiplayer chess game for windows.</p>
+      </div>
+    </div>
+
+    <!-- Project Card 16 -->
+    <!-- <div class="project-card" data-category="software" onclick="showPopup('airFighterGame')">
+      <div class="project-border">
+        <img src="./assets/air-fighter-game.png" alt="Air Fighter Game" class="project-img" style="width: 60%; height: 50%; object-fit: contain; padding-top: 5px;"/>
+        <h3 class="project-title">Air Fighter Game</h3>
+        <p class="project-text">A GUI based 2D game for windows.</p>
+      </div>
+    </div> -->
+
+    <!-- Project Card 17 -->
+    <!-- <div class="project-card" data-category="electronics" onclick="showPopup('hBridge')">
+      <div class="project-border">
+        <img src="./assets/dual-h-bridge.png" alt="H-Bridge" class="project-img" style="width: 60%; height: 50%; object-fit: contain; padding-top: 5px;"/>
+        <h3 class="project-title">H-Bridge</h3>
+        <p class="project-text">H-bridge for DC motor control with 24V 4A specifications.</p>
+      </div>
+    </div> -->
+
+    <!-- Project Card 18 -->
+    <div class="project-card" data-category="electronics" onclick="showPopup('alu')">
+      <div class="project-border">
+        <img src="./assets/alu.png" alt="8-bit Arithmetic Logic Unit" class="project-img" style="width: 95%; height: 95%; object-fit: contain; padding-top: 5px;"/>
+        <h3 class="project-title">8-bit Arithmetic Logic Unit</h3>
+        <p class="project-text">An electronic system designed for <strong>12</strong> basic arithmatic operations for two 8-bit numbers.</p>
+      </div>
+    </div>
+
+    <!-- Project Card 20 -->
+    <div class="project-card" data-category="mechanical" onclick="showPopup('exoGlove')">
+      <div class="project-border">
+        <img src="./assets/exo-glove.png" alt="Exo-Glove" class="project-img" style="width: 95%; height: 95%; object-fit: contain; padding-top: 5px;"/>
+        <h3 class="project-title">Exo-Glove</h3>
+        <p class="project-text">A tendon driven mechanical system designed for supporting hand movements for stokes patients.</p>
+      </div>
+    </div>
+
+    <!-- Project Card 21 -->
+    <div class="project-card" data-category="mechanical" onclick="showPopup('colt')">
+      <div class="project-border">
+        <img src="./assets/colt.png" alt="Colt 1911" class="project-img" style="width: 95%; height: 95%; object-fit: contain; padding-top: 5px;"/>
+        <h3 class="project-title">Colt 1911</h3>
+        <p class="project-text">A CAD model for Colt 1911 pistol.</p>
+      </div>
+    </div>
+
+    <!-- Project Card 22 -->
+    <div class="project-card" data-category="mechanical" onclick="showPopup('spiderBot')">
+      <div class="project-border">
+        <img src="./assets/spider-bot.png" alt="Hexapod Convertible Spider Bot" class="project-img" style="width: 95%; height: 95%; object-fit: contain; padding-top: 5px;"/>
+        <h3 class="project-title">Hexapod Convertible Spider Bot</h3>
+        <p class="project-text">A CAD model for a hexapod convertible spider robot.</p>
+      </div>
+    </div>
+
+    <!-- Project Card 23 -->
+    <div class="project-card" data-category="mechanical" onclick="showPopup('foundry')">
+      <div class="project-border">
+        <img src="./assets/ergnomics.png" alt="Optimisation of fettling and finishing shop in foundry" class="project-img" style="width: 90%; height: 75%; object-fit: contain; padding-top: 5px;"/>
+        <h3 class="project-title">Optimisation of fettling and finishing shop in foundry</h3>
+        <p class="project-text">Jigs and fixture design for optimal ergnomics to maximize labour productivity.</p>
       </div>
     </div>
   </div>
 
   <!-- Popup for Case Study -->
-  <div class="popup-overlay" id="project1">
+  <div class="popup-overlay" id="assistiveFeedingSystem">
     <div class="popup-content">
-      <span class="close-btn" onclick="closePopup('project1')">&times;</span>
+      <span class="close-btn" onclick="closePopup('assistiveFeedingSystem')">&times;</span>
       <h2>Assistive Feeding System</h2>
-      <p>Detailed case study goes here...</p>
+      <p>Detailed case study coming soon...</p>
       <!-- GitHub and Demo Buttons inside the Overlay -->
-      <div class="project-buttons">
+      <!-- <div class="project-buttons">
         <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/assistive-feeding-system'">GitHub</button>
         <button class="btn btn-demo" onclick="location.href='https://demo.com/assistive-feeding-system'">Demo</button>
-      </div>
+      </div> -->
     </div>
   </div>
 
-  <div class="popup-overlay" id="project2">
+  <div class="popup-overlay" id="opticalFiberSortingRobot">
     <div class="popup-content">
-      <span class="close-btn" onclick="closePopup('project2')">&times;</span>
-      <h2>Smart Prosthetics</h2>
-      <p>Detailed case study goes here...</p>
+      <span class="close-btn" onclick="closePopup('opticalFiberSortingRobot')">&times;</span>
+      <h2>Optical Fiber Sorting Robot</h2>
+      <p>Detailed case study coming soon...</p>
       <!-- GitHub and Demo Buttons inside the Overlay -->
-      <div class="project-buttons">
-        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/smart-prosthetics'">GitHub</button>
-        <button class="btn btn-demo" onclick="location.href='https://demo.com/smart-prosthetics'">Demo</button>
-      </div>
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/optical-fiber-sorting-robot'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/optical-fiber-sorting-robot'">Demo</button>
+      </div> -->
     </div>
   </div>
 
-  <div class="popup-overlay" id="project3">
+  <div class="popup-overlay" id="opticalFiberAssemblyRobot">
     <div class="popup-content">
-      <span class="close-btn" onclick="closePopup('project3')">&times;</span>
-      <h2>Autonomous Vehicle Design</h2>
-      <p>Detailed case study goes here...</p>
+      <span class="close-btn" onclick="closePopup('opticalFiberAssemblyRobot')">&times;</span>
+      <h2>Optical Fiber Assembly Robot</h2>
+      <p>Detailed case study coming soon...</p>
       <!-- GitHub and Demo Buttons inside the Overlay -->
-      <div class="project-buttons">
-        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/autonomous-vehicle'">GitHub</button>
-        <button class="btn btn-demo" onclick="location.href='https://demo.com/autonomous-vehicle'">Demo</button>
-      </div>
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/optical-fiber-assembly-robot'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/optical-fiber-assembly-robot'">Demo</button>
+      </div> -->
     </div>
   </div>
 
-  <div class="popup-overlay" id="project4">
+  <div class="popup-overlay" id="upperLimbProsthesis">
     <div class="popup-content">
-      <span class="close-btn" onclick="closePopup('project4')">&times;</span>
-      <h2>AI-Powered Diagnostic Tool</h2>
-      <p>Detailed case study goes here...</p>
+      <span class="close-btn" onclick="closePopup('upperLimbProsthesis')">&times;</span>
+      <h2>Upper Limb Prosthesis</h2>
+      <p>Detailed case study coming soon...</p>
       <!-- GitHub and Demo Buttons inside the Overlay -->
-      <div class="project-buttons">
-        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/ai-diagnostic-tool'">GitHub</button>
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/upper-limb-prosthesis'">GitHub</button>
         <button class="btn btn-demo" onclick="location.href='https://demo.com/ai-diagnostic-tool'">Demo</button>
-      </div>
+      </div> -->
     </div>
   </div>
+
+  <div class="popup-overlay" id="indigenousFruitHarvestingRobot">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('indigenousFruitHarvestingRobot')">&times;</span>
+      <h2>Indigenous Fruit Harvesting Robot</h2>
+      <p>Detailed case study coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/optical-fiber-assembly-robot'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/optical-fiber-assembly-robot'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="pidLineFollowerRobot">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('pidLineFollowerRobot')">&times;</span>
+      <h2>PID based Line Following Robot</h2>
+      <p>Detailed case study coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/optical-fiber-assembly-robot'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/optical-fiber-assembly-robot'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="sensorsApp">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('sensorsApp')">&times;</span>
+      <h2>Sensors App</h2>
+      <p>Detailed case study coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/optical-fiber-assembly-robot'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/optical-fiber-assembly-robot'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="chargingStation">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('chargingStation')">&times;</span>
+      <h2>Charging Station</h2>
+      <p>Detailed case study coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/optical-fiber-assembly-robot'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/optical-fiber-assembly-robot'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="uct">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('uct')">&times;</span>
+      <h2>Unified Checkout Terminal</h2>
+      <p>Detailed case study coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/optical-fiber-assembly-robot'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/optical-fiber-assembly-robot'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="checkoutAccelerator">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('checkoutAccelerator')">&times;</span>
+      <h2>Checkout Accelerator</h2>
+      <p>Detailed case study coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/optical-fiber-assembly-robot'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/optical-fiber-assembly-robot'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="chess2">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('chess2')">&times;</span>
+      <h2>Chess 2.0</h2>
+      <p>Detailed case study coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/optical-fiber-assembly-robot'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/optical-fiber-assembly-robot'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="deltaUpdator">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('deltaUpdator')">&times;</span>
+      <h2>Delta Updator</h2>
+      <p>Detailed case study coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/optical-fiber-assembly-robot'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/optical-fiber-assembly-robot'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="cic">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('cic')">&times;</span>
+      <h2>Catalog Integrity Checker</h2>
+      <p>Detailed case study coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/optical-fiber-assembly-robot'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/optical-fiber-assembly-robot'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="mdm">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('mdm')">&times;</span>
+      <h2>Mobile Device Management (MDM)</h2>
+      <p>Detailed case study coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/optical-fiber-assembly-robot'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/optical-fiber-assembly-robot'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="chess1">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('chess1')">&times;</span>
+      <h2>Chess 1.0</h2>
+      <p>Detailed case study coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/optical-fiber-assembly-robot'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/optical-fiber-assembly-robot'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="alu">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('alu')">&times;</span>
+      <h2>Arithmatic Logic Unit</h2>
+      <p>Detailed case study coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/optical-fiber-assembly-robot'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/optical-fiber-assembly-robot'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="exoGlove">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('exoGlove')">&times;</span>
+      <h2>Exo-Glove</h2>
+      <p>Detailed case study coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/optical-fiber-assembly-robot'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/optical-fiber-assembly-robot'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="colt">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('colt')">&times;</span>
+      <h2>Colt 1911</h2>
+      <p>Detailed case study coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/optical-fiber-assembly-robot'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/optical-fiber-assembly-robot'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="spiderBot">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('spiderBot')">&times;</span>
+      <h2>Hexapod Convertible Spider Bot</h2>
+      <p>Detailed case study coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/optical-fiber-assembly-robot'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/optical-fiber-assembly-robot'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="foundry">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('foundry')">&times;</span>
+      <h2>Optimisation of fettling and finishing shop in foundry</h2>
+      <p>Detailed case study coming soon...</p>
+      <!-- GitHub and Demo Buttons inside the Overlay -->
+      <!-- <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/optical-fiber-assembly-robot'">GitHub</button>
+        <button class="btn btn-demo" onclick="location.href='https://demo.com/optical-fiber-assembly-robot'">Demo</button>
+      </div> -->
+    </div>
+  </div>
+
 </section>
 
 
@@ -432,7 +777,7 @@
     </section>
 <!-- ################################################################################################################################################################################ -->
     <footer>
-      <nav>
+      <!-- <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
@@ -443,7 +788,7 @@
             <li><a href="#publications">Publications</a></li>
           </ul>
         </div>
-      </nav>
+      </nav> -->
       <p>Copyright &#169; 2024 Usama Jahangir. All Rights Reserved. [Last Updated: November, 2024]</p>
     </footer>
     <script src="script.js"></script>
