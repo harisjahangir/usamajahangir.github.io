@@ -58,6 +58,7 @@
   .section__pic-container {
     width: 80%; /* Adjust width for smaller screens */
     height: auto; /* Maintain aspect ratio */
+    margin-top: 5px;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
@@ -100,6 +101,7 @@
   }
 
   .section__pic-container {
+    margin-top: 5px;
     width: 90%; /* Further reduce width for very small screens */
   }
 
