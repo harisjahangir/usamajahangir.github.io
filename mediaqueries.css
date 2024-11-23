@@ -48,57 +48,60 @@
 }
 
 @media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    height: 40vh;
+  /* General body adjustments to prevent horizontal scrolling */
+  body {
+    overflow-x: hidden; /* Disable horizontal scrolling */
   }
+
+  /* Adjusting the profile section */
   #profile {
-    height: 83vh;
-    margin-bottom: 0;
+    height: auto; /* Allow height to adjust based on content */
+    margin-bottom: 0; /* Remove bottom margin */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    width: 100%; /* Ensure it takes full width */
+    padding: 0 1rem; /* Add padding to prevent content from touching edges */
+    box-sizing: border-box; /* Include padding in width calculation */
   }
-  article {
-    font-size: 1rem;
-  }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
-  }
-  .about-containers,
-  .contact-info-upper-container,
-  .btn-container {
-    flex-wrap: wrap;
-  }
-  .contact-info-container {
-    margin: 0;
-  }
-  .contact-info-container p,
-  .nav-links li a {
-    font-size: 1rem;
-  }
-  .experience-sub-title {
-    font-size: 1.25rem;
-  }
-  .logo {
-    font-size: 1.5rem;
-  }
-  .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
-  }
+
   .section__pic-container {
-    width: auto;
-    height: 46vw;
-    justify-content: center;
+    width: 80%; /* Reduce width for mobile */
+    height: auto; /* Allow height to adjust based on content */
+    max-width: 300px; /* Set a maximum width for the image */
+    margin: 0 auto; /* Center the image */
   }
-  .section__text__p2 {
-    font-size: 1.25rem;
+
+  /* Adjusting contact section to prevent horizontal scrolling */
+  #contact {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    padding: 1rem; /* Add padding for better spacing */
+    width: 100%; /* Ensure it takes full width */
+    overflow: hidden; /* Prevent overflow */
   }
-  .title {
-    font-size: 2rem;
+
+  .contact-info-upper-container {
+    width: 100%; /* Ensure it takes full width */
+    padding: 0.5rem; /* Add padding for better spacing */
+    box-sizing: border-box; /* Include padding in width calculation */
   }
-  .text-container {
-    text-align: justify;
+
+  .contact-info-container {
+    width: 100%; /* Ensure it takes full width */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    margin: 0; /* Remove margin to prevent overflow */
+  }
+
+  .contact-info-container p {
+    font-size: 1rem; /* Adjust font size for better readability */
+    text-align: center; /* Center text */
+  }
+
+  /* Adjusting margins for the entire section */
+  section {
+    margin: 0 2%; /* Reduce margins for better fit */
   }
 }
 
