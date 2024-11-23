@@ -102,6 +102,32 @@
   }
 }
 
+@media (max-width: 768px) {
+  .section-container {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .section__pic-container {
+    margin-bottom: 20px;
+  }
+
+  .about-details-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-container {
+    padding: 0 10px;
+  }
+
+  .about-pic {
+    width: 80%;
+    height: auto;
+  }
+}
+
 .project-btn.active {
   background-color: #333;
   color: #fff;
@@ -114,3 +140,52 @@
 .details-container[style="display: flex;"] {
   display: flex;
 }
+
+/* Full-screen bubble animation effect in the profile section */
+#profile {
+  position:relative; /* Ensure that bubbles are placed above the content */
+  overflow:visible; /* Prevent horizontal scrolling */
+}
+
+/* Container for the bubbles */
+.bubbles-container {
+  position: fixed; /* Absolute positioning to float over content */
+  top: 750px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Make sure bubbles don't block interactions */
+  z-index: -1; /* Place bubbles behind the content */
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0) scale(0.5);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-200px) scale(0.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-500px) scale(1);
+    opacity: 0;
+  }
+}
+
+.bubble {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: bubble 15s infinite ease-in-out;
+}
+
+.bubble:nth-child(odd) {
+  animation-duration: 7s; /* Vary animation duration for randomness */
+}
+
+.bubble:nth-child(even) {
+  animation-duration: 5s;
+}
+
