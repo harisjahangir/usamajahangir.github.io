@@ -42,9 +42,9 @@
         </div>
       </div>
     </nav>
-    <div id="news-bar" style="background-color: lightgrey; color: #000; position: fixed; top: 7vh; width: 100%; z-index: 100; height: 3vh; text-align: center; font-size: 16px; overflow: hidden;">
+    <!-- <div id="news-bar" style="background-color: lightgrey; color: #000; position: fixed; top: 7vh; width: 100%; z-index: 100; height: 3vh; text-align: center; font-size: 16px; overflow: hidden;">
       <p><strong>Latest Update:</strong> Conference paper "Assistive Feeding System: Design and Evaluation" accepted to International Conference of Robotics and Automation in Industry (ICRAI) 2024</p>
-    </div>
+    </div> -->
 <!-- ########################################################################        Profile         ################################################################################### -->
 <div class="bubbles-container"></div>
 <section id="profile" style="margin-top: 50px;">
@@ -88,48 +88,50 @@
 <hr style="border-top: 1px solid black; width: 100%; margin-top: 120px; margin-bottom: 0px;">
 
 <!-- ########################################################################        About         ################################################################################### -->
-    <section id="about">
-      <div style="margin-top: 120px;">
-        <h1 class="title">About Me</h1>
-      </div>
-      <p class="section__text__p1" style="margin-top: 0;">Who am I? Let's find out!</p>
-      <div class="section-container" style="margin-top: -100px;">
-        <div class="section__pic-container">
+<section id="about">
+  <div style="margin-top: 120px;">
+    <h1 class="title">About Me</h1>
+  </div>
+  <p class="section__text__p1" style="margin-top: 0;">Who am I? Let's find out!</p>
+  <div class="section-container" style="margin-top: -100px;">
+    <div class="section__pic-container">
+      <img
+        src="./assets/about-pic.png"
+        alt="Profile picture"
+        class="about-pic"
+      />
+    </div>
+    <div class="about-details-container">
+      <div class="about-containers">
+        <div class="details-container" style="display: flex; flex-direction: column; align-items: center;">
           <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
+            src="./assets/experience.png"
+            alt="Experience icon"
+            class="icon"
           />
+          <h3>Experience</h3>
+          <p>1.5+ years <br />Industrial Automation & Embedded Systems</p>
         </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container" style="display: flex; flex-direction: column; align-items: center;">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>1.5+ years <br />Industrial Automation & Embedded Systems</p>
-            </div>
-            <div class="details-container" style="display: flex; flex-direction: column; align-items: center;">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>BEng. Mechatronics Engineering</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              I'm a Mechatronics Engineer with a passion for building innovative solutions that blend hardware and software to create intelligent systems.
-            </p>
-          </div>
+        <div class="details-container" style="display: flex; flex-direction: column; align-items: center;">
+          <img
+            src="./assets/education.png"
+            alt="Education icon"
+            class="icon"
+          />
+          <h3>Education</h3>
+          <p>BEng. Mechatronics Engineering</p>
         </div>
       </div>
-    </section>
+      <div class="text-container">
+        <p style="text-align: center;">
+          I'm a Mechatronics Engineer with a passion for building innovative solutions that blend hardware and software to create intelligent systems.
+          My specialization is in embedded systems, targeting applications in healthcare, robotics, assistive technology, ADAS solutions, IoT, and industrial automation.
+          Having started my professional career at a Y Combinator-backed startup company, I look forward to contributing to R&D-based, fast-paced, and challenging environments.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
     <hr style="border-top: 1px solid black; width: 100%; margin-top: 120px; margin-bottom: 0px;">
 <!-- ########################################################################        Experience         ################################################################################### -->
     <section id="experience">
@@ -146,10 +148,10 @@
               <img src="./assets/cowlar-design-studio.svg" alt="Cowlar Design Studio" class="icon" style="width: 150px; height: 50px;" />
             </a>
             <h2 class="experience-sub-title" style="margin-bottom: 0;">Team Lead, Industrial Automation</h2>
-            <p style="margin-top: 0;">Cowlar Design Studio (Y-Combinator Backed)     [Sep 24 - Oct 24]</p>
-            <ul style="padding-left: 20px; margin-top: 30px;">
-              <li style="text-align: left;">Led a team of <strong>5 engineers</strong> to develop <strong>AI-powered industrial robots</strong> for a client in Aurora, IL.</li>
-              <li style="text-align: left;">Developed firmware on <strong>Rockchip RK3588</strong> using <strong>Python</strong>, increasing throughput by <strong>400%</strong> and <strong>87%</strong>.</li>
+            <p style="margin-top: 0;">Cowlar Design Studio (Y-Combinator Backed)<br>[Sep 24 - Oct 24]</p>
+            <ul style="padding-left: 20px; margin-top: 30px;max-width: 75%;">
+              <li style="text-align: left;">Led a mutidisciplinary team of <strong>5 engineers</strong> to develop <strong>AI-powered industrial robots</strong> for a client in Aurora, IL, USA.</li>
+              <li style="text-align: left;">Developed firmware for <strong>2</strong> custom robots based on <strong>Rockchip's RK3588</strong> using <strong>Python</strong>, increasing throughput by <strong>400%</strong> and <strong>87%</strong>.</li>
             </ul>
             <div class="award-container" style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
               <img src="./assets/award.png" alt="Award Icon" style="width: 60px; height: 60px; margin-right: 10px;" />
@@ -165,14 +167,17 @@
               <img src="./assets/cowlar-design-studio.svg" alt="Cowlar Design Studio" class="icon" style="width: 150px; height: 50px;" />
             </a>
             <h2 class="experience-sub-title" style="margin-bottom: 0;">Embedded Design Engineer</h2>
-            <p style="margin-top: 0;">Cowlar Design Studio (Y-Combinator Backed)     [Jun 23 - Aug 24]</p>
-            <ul style="padding-left: 20px; margin-top: 30px;">
-              <li style="text-align: left;">Designed and developed <strong>custom PCBs</strong> for IoT devices using <strong>Altium Designer</strong>.</li>
-              <li style="text-align: left;">Implemented firmware for microcontrollers in <strong>C</strong> and <strong>C++</strong>, ensuring efficient power management.</li>
+            <p style="margin-top: 0;">Cowlar Design Studio (Y-Combinator Backed)<br>[Jun 23 - Aug 24]</p>
+            <ul style="padding-left: 20px; margin-top: 30px; max-width: 75%;">
+              <li style="text-align: left;">Engineered communication protocols (<strong>SMBus</strong> over <strong>I2C</strong>, <strong>Modbus</strong> over <strong>UART</strong>, and <strong>CAN</strong>) on <strong>ESP32</strong> using <strong>FreeRTOS</strong> in <strong>C</strong>, contributing to a charging station currently deployed in Qatar.</li>
+              <li style="text-align: left;">Developed and optimized custom <strong>Android 12</strong> applications using <strong>Kotlin</strong>, <strong>C</strong> and <strong>Java</strong>, integrating <strong>IMU</strong> sensors, <strong>Zebra</strong>, and 
+                <strong>Honeywell</strong> scanner modules for retail deployments in Almeera Wakra South Store, Qatar.</li>
+                <li style="text-align: left;">Automated deployments with <strong>Docker</strong> and <strong>Shell runner</strong> based <strong>GitLab</strong> pipelines, improving shell runner based pipeline efficiency by <strong>60%</strong>.</li>
+                <li style="text-align: left;">Designed automation scripts for testing, and maintenance using <strong>Python</strong> and <strong>shell scripting</strong>, streamlining operational efficiency.</li>
             </ul>
             <div class="award-container" style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
               <img src="./assets/award.png" alt="Award Icon" style="width: 60px; height: 60px; margin-right: 10px;" />
-              <p style="margin: 0;"><strong>Trailblazer:</strong> Honored to pitch myself during the annual design retreat as the first self-pitch in the company</p>
+              <p style="margin: 0;"><strong>Trailblazer:</strong> Honored to pitch myself during the annual design retreat as the first self-pitch in the company.</p>
             </div>
           </div>
         </div>
@@ -185,10 +190,10 @@
               <img src="./assets/qadri-group.png" alt="Qadri Group" class="icon" style="width: 100px; height: 100px;" />
             </a>
             <h2 class="experience-sub-title" style="margin-bottom: 0;">Leaders for Manufacturing Intern</h2>
-            <p style="margin-top: 0;">Qadri Group     [Jul 22 - Sep 22]</p>
-            <ul style="padding-left: 20px; margin-top: 30px;">
-              <li style="text-align: left;">Optimized production processes, achieving a <strong>25% efficiency increase</strong>.</li>
-              <li style="text-align: left;">Developed and implemented <strong>quality control procedures</strong>, reducing defects by <strong>15%</strong>.</li>
+            <p style="margin-top: 0;">Qadri Group<br>[Jul 22 - Sep 22]</p>
+            <ul style="padding-left: 20px; margin-top: 30px;max-width: 95%;">
+              <li style="text-align: left;">Conducted <strong>time-motion studies</strong>, testing <strong>jigs & fixtures</strong> designs to reduce lean wastages for <strong>3 inline parts</strong>, improving throughput by <strong>33%</strong>.</li>
+              <li style="text-align: left;">Collaborated with industrial and mechanical engineers to present feasibility reports and solutions, driving informed decision-making.</li>
             </ul>
           </div>
           <!-- NCRA -->
@@ -197,10 +202,10 @@
               <img src="./assets/ncra.png" alt="NCRA" class="icon" style="width: 130px; height: 100px;" />
             </a>
             <h2 class="experience-sub-title" style="margin-bottom: 0;">Biomedical Research and Development Intern</h2>
-            <p style="margin-top: 0;">National Centre of Robotics and Automation     [Jul 21 - Aug 21]</p>
-            <ul style="padding-left: 20px; margin-top: 30px;">
-              <li style="text-align: left;">Contributed to the development of <strong>biomedical devices</strong>, including a portable ECG monitor.</li>
-              <li style="text-align: left;">Supported the design and testing of <strong>medical robotics</strong> for surgical applications.</li>
+            <p style="margin-top: 0;">National Centre of Robotics and Automation<br>[Jul 21 - Aug 21]</p>
+            <ul style="padding-left: 20px; margin-top: 30px;max-width: 95%;">
+              <li style="text-align: left;">Restored a 6 DOF 3D-printed, parallel manipulator-based "<strong>Upper Limb Prosthesis</strong>," enhancing control for users with amputations.</li>
+              <li style="text-align: left;">Programmed linear actuators in <strong>C</strong>, enabling multi-grasp capabilities to support improved dexterity and usability for prosthesis users.</li>
             </ul>
           </div>
         </div>
@@ -222,10 +227,10 @@
               <img src="./assets/nust.png" alt="NUST" class="icon" style="width: 100px; height: 100px;" />
             </a>
             <h2 class="education-sub-title" style="margin-bottom: 0;">BEng. Mechatronics Engineering</h2>
-            <p style="margin-top: 0;">National University of Sciences and Technology     [Graduation: Jun 23]</p>
+            <p style="margin-top: 0;">National University of Sciences and Technology<br>[Graduation: Jun 23]</p>
             <ul style="padding-left: 20px; margin-top: 30px; list-style-type: disc;">
               <li style="text-align: left; margin-bottom: 5px;"><strong>Thesis (Capstone Project):</strong> Assistive Feeding System</li>
-              <li style="text-align: left;"><strong>Major Courses:</strong> Robotics, Industrial Automation</li>
+              <li style="text-align: left;"><strong>Major Courses:</strong> Robotics, Industrial Automation, Mechatronics System Design</li>
               <li style="text-align: left;"><strong>Minor Courses:</strong> Machine Learning, Databases, Automotive Manufacturing Systems</li>
               <li style="text-align: left;"><strong>Advance Course (Audited):</strong> Advance Embedded System, Artificial Neural Network, Biomedical Instrumentation</li>
             </ul>
@@ -244,7 +249,7 @@
               <img src="./assets/gcu.png" alt="GCU Lahore" class="icon" style="width: 100px; height: 100px;" />
             </a>
             <h2 class="education-sub-title" style="margin-bottom: 0;">Pre-Engineering</h2>
-            <p style="margin-top: 0;">Government College University, Lahore     [Graduation: Aug 19]</p>
+            <p style="margin-top: 0;">Government College University, Lahore<br>[Graduation: Aug 19]</p>
             <ul style="padding-left: 20px; margin-top: 30px; list-style-type: disc;">
               <li style="text-align: left;"><strong>External Grade:</strong> A+    <strong>Internal Grade:</strong> A</li>
               <li style="text-align: left;">Class respresentative junior and senior year</li>
@@ -489,31 +494,31 @@
     </div>
   </div>
 
-  <div class="popup-overlay" id="opticalFiberSortingRobot">
+  <!-- <div class="popup-overlay" id="opticalFiberSortingRobot">
     <div class="popup-content">
       <span class="close-btn" onclick="closePopup('opticalFiberSortingRobot')">&times;</span>
       <h2>Optical Fiber Sorting Robot</h2>
-      <p>Detailed case study coming soon...</p>
+      <p>Detailed case study coming soon...</p> -->
       <!-- GitHub and Demo Buttons inside the Overlay -->
       <!-- <div class="project-buttons">
         <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/optical-fiber-sorting-robot'">GitHub</button>
         <button class="btn btn-demo" onclick="location.href='https://demo.com/optical-fiber-sorting-robot'">Demo</button>
       </div> -->
-    </div>
-  </div>
+    <!-- </div>
+  </div> -->
 
-  <div class="popup-overlay" id="opticalFiberAssemblyRobot">
+  <!-- <div class="popup-overlay" id="opticalFiberAssemblyRobot">
     <div class="popup-content">
       <span class="close-btn" onclick="closePopup('opticalFiberAssemblyRobot')">&times;</span>
       <h2>Optical Fiber Assembly Robot</h2>
-      <p>Detailed case study coming soon...</p>
+      <p>Detailed case study coming soon...</p> -->
       <!-- GitHub and Demo Buttons inside the Overlay -->
       <!-- <div class="project-buttons">
         <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/optical-fiber-assembly-robot'">GitHub</button>
         <button class="btn btn-demo" onclick="location.href='https://demo.com/optical-fiber-assembly-robot'">Demo</button>
       </div> -->
-    </div>
-  </div>
+    <!-- </div>
+  </div> -->
 
   <div class="popup-overlay" id="upperLimbProsthesis">
     <div class="popup-content">
@@ -737,11 +742,25 @@
   </div>
 
 </section>
-
-
-
-
     <hr style="border-top: 1px solid black; width: 100%; margin-top: 120px; margin-bottom: 0px;">
+
+<!-- ########################################################################        Publications         ################################################################################### -->
+<section id="publications">
+  <div style="margin-top: 120px;">
+    <h1 class="title">Publications</h1>
+  </div>
+  <div class="publications-details-container" style="display: flex; flex-direction: column; gap: 20px;">
+    
+    <div class="about-containers">
+      <div class="details-container" style="display: flex; flex-direction: column; align-items: center;">
+        <h2 class="publications-sub-title" style="margin-bottom: 0; text-align: center;">Conference Paper</h2>
+        <p style="margin-top: 0; text-align: center;"><strong>Usama Jahangir*</strong>, Fahad Aamir, Wajid Ali, Mohsin Tiwana and Hamid Jabbar. Assistive Feeding System: Design and Evaluation.<br>In 2024 IEEE International Conference on Robotics and Automation in Industry (ICRAI)<br>To be presented on 18-19 December 2024</p>
+      </div>
+    </div>
+    
+  </div>
+</section>
+<hr style="border-top: 1px solid black; width: 100%; margin-top: 120px; margin-bottom: 0px;">
 <!-- ########################################################################        Contact         ################################################################################### -->
     <section id="contact">
       <div style="margin-top: 120px;"></div>
