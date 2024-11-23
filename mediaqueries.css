@@ -64,7 +64,7 @@
   }
 
   .about-pic {
-    max-width: 100%; /* Ensure the image scales correctly */
+    max-width: 50%; /* Ensure the image scales correctly */
     height: auto;
   }
 
@@ -108,7 +108,7 @@
   }
 
   .about-pic {
-    width: 70%;
+    width: 50%;
     margin-bottom: 15px;
   }
 
