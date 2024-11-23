@@ -47,68 +47,37 @@
   }
 }
 
-@media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    height: 40vh;
-  }
-  #profile {
-    height: 83vh;
-    margin-bottom: 0;
-  }
-  article {
-    font-size: 1rem;
-  }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
-  }
-  .about-containers,
-  .contact-info-upper-container,
-  .btn-container {
-    flex-wrap: wrap;
-  }
-  .contact-info-container {
-    margin: 0;
-  }
-  .contact-info-container p,
-  .nav-links li a {
-    font-size: 1rem;
-  }
-  .experience-sub-title {
-    font-size: 1.25rem;
-  }
-  .logo {
-    font-size: 1.5rem;
-  }
-  .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
-  }
-  .section__pic-container {
-    width: auto;
-    height: 46vw;
-    justify-content: center;
-  }
-  .section__text__p2 {
-    font-size: 1.25rem;
-  }
-  .title {
-    font-size: 2rem;
-  }
-  .text-container {
-    text-align: justify;
-  }
-}
-
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .section-container {
+    display: flex;
     flex-direction: column;
     margin-top: 20px;
+    align-items: center;
   }
 
   .section__pic-container {
+    width: 80%; /* Adjust width for smaller screens */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-pic {
+    max-width: 100%; /* Ensure the image scales correctly */
+    height: auto;
+  }
+
+  .title {
+    font-size: 1.75rem; /* Adjust font size for smaller screens */
+    margin-bottom: 20px; /* Add space below the title */
+    text-align: center;
+  }
+
+  .section__text__p1 {
+    font-size: 1rem; /* Reduce font size */
+    text-align: center;
+    margin-top: 10px;
     margin-bottom: 20px;
   }
 
@@ -116,29 +85,36 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 0 10px;
   }
 
   .text-container {
     padding: 0 10px;
+    text-align: justify; /* Optional for better readability */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section-container {
+    margin-top: 10px;
+  }
+
+  .section__pic-container {
+    width: 90%; /* Further reduce width for very small screens */
+  }
+
+  .title {
+    font-size: 1.5rem; /* Slightly smaller for extra-small screens */
   }
 
   .about-pic {
-    width: 80%;
-    height: auto;
+    width: 70%;
+    margin-bottom: 15px;
   }
-}
 
-.project-btn.active {
-  background-color: #333;
-  color: #fff;
-}
-
-.details-container {
-  display: none; 
-}
-
-.details-container[style="display: flex;"] {
-  display: flex;
+  .text-container {
+    padding: 0 5px; /* Narrower padding */
+  }
 }
 
 /* Full-screen bubble animation effect in the profile section */
