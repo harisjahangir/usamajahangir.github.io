@@ -65,10 +65,20 @@
   }
 
   .section__pic-container {
-    width: 80%; /* Reduce width for mobile */
-    height: auto; /* Allow height to adjust based on content */
+    margin-top: 100px;
+    width: 200px; /* Reduce width for mobile */
+    height: 200px; /* Allow height to adjust based on content */
     max-width: 300px; /* Set a maximum width for the image */
-    margin: 0 auto; /* Center the image */
+    /* margin: 0 auto;  */
+  }
+
+  #about{
+    margin-top: -20px;
+  }
+
+  .about-pic{
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /* Adjusting contact section to prevent horizontal scrolling */
@@ -85,6 +95,8 @@
     width: 100%; /* Ensure it takes full width */
     padding: 0.5rem; /* Add padding for better spacing */
     box-sizing: border-box; /* Include padding in width calculation */
+    padding: auto;
+    flex-direction: column;
   }
 
   .contact-info-container {
