@@ -481,18 +481,82 @@
   </div>
 
   <!-- Popup for Case Study -->
-  <div class="popup-overlay" id="assistiveFeedingSystem">
-    <div class="popup-content">
-      <span class="close-btn" onclick="closePopup('assistiveFeedingSystem')">&times;</span>
-      <h2>Assistive Feeding System</h2>
-      <p>Detailed case study coming soon...</p>
-      <!-- GitHub and Demo Buttons inside the Overlay -->
-      <!-- <div class="project-buttons">
-        <button class="btn btn-github" onclick="location.href='https://github.com/yourusername/assistive-feeding-system'">GitHub</button>
-        <button class="btn btn-demo" onclick="location.href='https://demo.com/assistive-feeding-system'">Demo</button>
-      </div> -->
+  <div class="popup-overlay" id="assistiveFeedingSystem" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); display: none; justify-content: center; align-items: center; z-index: 9999;">
+    <div class="popup-content case-study-popup" style="max-width: 900px; max-height: 90vh; overflow: hidden; position: relative; background: #fff; padding: 20px; border-radius: 10px;">
+        <!-- Close Button -->
+        <span class="close-btn" onclick="closePopup('assistiveFeedingSystem')" style="position: absolute; top: 10px; right: 10px; font-size: 48px; cursor: pointer; font-weight: bold; color: #333;">&times;</span>
+
+        <h2 style="text-align: center; margin-bottom: 20px;">Assistive Feeding System</h2>
+
+        <!-- Media Carousel -->
+        <div class="media-carousel" style="position: relative; margin-bottom: 20px;">
+            <div class="carousel-item active">
+                <iframe 
+                    width="100%" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/RmsqwGzjRZM" 
+                    title="Assistive Feeding System Demo" 
+                    frameborder="0" 
+                    allowfullscreen
+                    style="border-radius: 8px;">
+                </iframe>
+            </div>
+            <div class="carousel-item" style="display: none;">
+                <img src="image1.jpg" alt="System Design" style="width: 100%; height: 315px; object-fit: cover; border-radius: 8px;">
+            </div>
+
+            <!-- Navigation Arrows -->
+            <button class="carousel-arrow prev" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: none; border: none; font-size: 24px; color: white; cursor: pointer;">❮</button>
+            <button class="carousel-arrow next" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: none; border: none; font-size: 24px; color: white; cursor: pointer;">❯</button>
+        </div>
+
+        <!-- Two Column Layout -->
+        <div style="display: flex; gap: 20px; max-height: 50vh; overflow-y: auto;">
+            <!-- Left Column -->
+            <div style="flex: 1; min-width: 300px;">
+                <div class="detail-section" style="margin-bottom: 20px;">
+                    <h3>Summary</h3>
+                    <p style="text-align: justify;">An assistive feeding system using a 3D-printed 6-DOF robotic arm with hybrid vision system for mouth detection and food delivery. Features counterweight mechanism for reduced power consumption and embedded Raspberry Pi control.</p>
+                </div>
+
+                <div class="detail-section">
+                    <h3>Results</h3>
+                    <div style="display: flex; align-items: center; gap: 10px; margin-top: 8px;">
+                        <img src="assets/icons/goal.png" alt="Results" style="width: 24px; height: 24px;">
+                        <p style="margin: 0;">Successfully fed rice to 3 test subjects using multiple interfaces (touch screen, mobile app, laptop).</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div style="flex: 1; min-width: 300px;">
+                <div class="detail-section" style="margin-bottom: 20px;">
+                    <h3>My Contributions</h3>
+                    <p>Team Lead, Embedded System (Programming & Electronics) & 3D printing</p>
+                </div>
+
+                <div class="detail-section" style="margin-bottom: 20px;">
+                    <h3>Contributors</h3>
+                    <p>Dr. Mohsin Islam Tiwana (Supervisor)<br>
+                    Dr. Hamid Jabbar (Co-Supervisor)<br>
+                    Muhammad Fahad Aamir (Mechanical)<br>
+                    Wajid Ali (Computer Vision)</p>
+                </div>
+
+                <div class="detail-section">
+                    <h3>Technologies Used</h3>
+                    <p>• Raspberry Pi<br>
+                       • 3D Printing (PLA+)<br>
+                       • Computer Vision<br>
+                       • Robotics Control Systems<br>
+                       • IoT Integration</p>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
+</div>
+
+
 
   <!-- <div class="popup-overlay" id="opticalFiberSortingRobot">
     <div class="popup-content">
@@ -755,7 +819,7 @@
     <div class="about-containers">
       <div class="details-container" style="display: flex; flex-direction: column; align-items: center;">
         <h2 class="publications-sub-title" style="margin-bottom: 0; text-align: center;">Conference Paper</h2>
-        <p style="margin-top: 0; text-align: center;"><strong>Usama Jahangir*</strong>, Fahad Aamir, Wajid Ali, Mohsin Tiwana and Hamid Jabbar. Assistive Feeding System: Design and Evaluation.<br>In 2024 IEEE International Conference on Robotics and Automation in Industry (ICRAI)<br>To be presented on 18-19 December 2024</p>
+        <p style="margin-top: 0; text-align: center;"><strong>Usama Jahangir*</strong>, Fahad Aamir, Wajid Ali, Mohsin Tiwana and Hamid Jabbar. Assistive Feeding System: Design and Evaluation.<br>In 2024 IEEE International Conference on Robotics and Automation in Industry (ICRAI) 18-19 December 2024</p>
       </div>
     </div>
     

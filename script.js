@@ -93,3 +93,23 @@ window.onload = () => {
   createBubbles();
   filterProjects("all");
 };
+
+let currentMedia = 1;
+
+function nextMedia() {
+    currentMedia++;
+    if (currentMedia > 2) currentMedia = 1;
+    updateMedia();
+}
+
+function previousMedia() {
+    currentMedia--;
+    if (currentMedia < 1) currentMedia = 2;
+    updateMedia();
+}
+
+function updateMedia() {
+    document.querySelectorAll('.media-item').forEach((item, index) => {
+        item.style.display = (index + 1 === currentMedia) ? 'block' : 'none';
+    });
+}
