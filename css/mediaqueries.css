@@ -40,8 +40,8 @@
   
   /* Profile Section */
   .section__pic-container {
-    width: 275px;
-    height: 275px;
+    width: 175px;
+    height: 175px;
     margin: 0 auto 2rem;
   }
   
@@ -86,9 +86,7 @@
     padding: 0 10px;
   }
   
-  .section__pic-container {
-    margin-bottom: 20px;
-  }
+
 }
 
 /* ===== MOBILE (600px and below) ===== */
@@ -111,13 +109,6 @@
     width: 100%;
     padding: 0 1rem;
     box-sizing: border-box;
-  }
-  
-  .section__pic-container {
-    margin-top: 100px;
-    width: 200px;
-    height: 200px;
-    max-width: 300px;
   }
   
   /* About Section */
@@ -155,11 +146,6 @@
   }
   
   /* Icons */
-  .icon {
-    width: 20px;
-    height: 20px;
-  }
-  
   .contact-icon {
     width: 24px;
     height: 24px;

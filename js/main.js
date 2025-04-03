@@ -16,25 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
   loadFooter();
 });
 
-// Theme toggle function
-function toggleTheme() {
-  const body = document.body;
-  const themeIcon = document.getElementById('theme-icon');
-  const themeIconMobile = document.getElementById('theme-icon-mobile');
-  
-  body.classList.toggle('dark-theme');
-  
-  if (body.classList.contains('dark-theme')) {
-    if (themeIcon) themeIcon.src = './assets/moon.png';
-    if (themeIconMobile) themeIconMobile.src = './assets/moon.png';
-    localStorage.setItem('theme', 'dark');
-  } else {
-    if (themeIcon) themeIcon.src = './assets/sun.png';
-    if (themeIconMobile) themeIconMobile.src = './assets/sun.png';
-    localStorage.setItem('theme', 'light');
-  }
-}
-
 // Menu toggle function
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
