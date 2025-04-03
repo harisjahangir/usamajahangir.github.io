@@ -1,0 +1,29 @@
+[
+    {
+      "id": "assistiveFeedingSystem",
+      "title": "Assistive Feeding System",
+      "category": "robotics",
+      "image": "./assets/afs.png",
+      "description": "A 3D printed 6 DOF care giver serial robotic manipulator for feeding food to patients, elderly and the disabled. Successfully fed rice to 3 test subjects.",
+      "details": {
+        "summary": "An assistive feeding system using a 3D-printed 6-DOF robotic arm with hybrid vision system for mouth detection and food delivery.",
+        "contributions": "Team Lead, Embedded System (Programming & Electronics) & 3D printing",
+        "technologies": ["Raspberry Pi", "3D Printing (PLA+)", "Computer Vision", "Robotics Control Systems"],
+        "video": "https://www.youtube.com/embed/RmsqwGzjRZM"
+      }
+    },
+    {
+      "id": "opticalFiberSortingRobot",
+      "title": "Optical Fiber Sorting Robot",
+      "category": "robotics",
+      "image": "./assets/nda.png",
+      "description": "A robotic system designed for sorting optical fibers with 250 microns precision increasing throughput by 87%.",
+      "details": {
+        "summary": "Precision robotic system for optical fiber sorting with micron-level accuracy.",
+        "contributions": "Firmware development and system integration",
+        "technologies": ["Python", "RK3588", "Computer Vision"],
+        "video": null
+      }
+    }
+    // Additional projects would follow the same structure
+  ]

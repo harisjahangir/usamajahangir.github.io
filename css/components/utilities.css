@@ -1,0 +1,29 @@
+/* UTILITY CLASSES */
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .section {
+    padding: var(--section-padding) 0;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .grid {
+    display: grid;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+  }

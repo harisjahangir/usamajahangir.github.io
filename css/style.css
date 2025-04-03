@@ -585,3 +585,217 @@ footer p {
     min-width: auto;
   }
 }
+
+/* Theme Toggle Button Styles */
+.theme-toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+  transform: scale(1.1);
+}
+
+.theme-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+/* Dark Theme Styles */
+body.dark-theme {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+body.dark-theme .section__text__p1,
+body.dark-theme .section__text__p2,
+body.dark-theme .about-containers p,
+body.dark-theme .details-container p,
+body.dark-theme .project-text,
+body.dark-theme .project-title,
+body.dark-theme .experience-sub-title,
+body.dark-theme .education-sub-title,
+body.dark-theme .publications-sub-title {
+  color: #ffffff;
+}
+
+body.dark-theme .project-border {
+  background-color: #2d2d2d;
+  border-color: #404040;
+}
+
+body.dark-theme .popup-content {
+  background-color: #2d2d2d;
+  color: #ffffff;
+}
+
+body.dark-theme .close-btn {
+  color: #ffffff;
+}
+
+body.dark-theme hr {
+  border-color: #404040;
+}
+
+body.dark-theme footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+body.dark-theme #desktop-nav,
+body.dark-theme #hamburger-nav {
+  background-color: #000000;
+}
+
+body.dark-theme .menu-links {
+  background-color: #ffffff;
+}
+
+body.dark-theme .menu-links a {
+  color: #000000;
+}
+
+:root {
+  --primary-color: #333;
+  --secondary-color: #666;
+  --text-color: #333;
+  --text-secondary: #666;
+  --bg-color: #fff;
+  --card-bg: #fff;
+  --border-color: #ddd;
+  --footer-bg: #f8f9fa;
+  --footer-text: #333;
+  --footer-text-secondary: #666;
+  --footer-link: #333;
+  --footer-link-hover: #007bff;
+  --header-bg: #1a202c;
+  --header-text: #f8f9fa;
+  --header-link: #e2e8f0;
+  --header-link-hover: #63b3ed;
+  --header-border: #2d3748;
+  --header-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  --hamburger-color: #f8f9fa;
+}
+
+.dark-theme {
+  --primary-color: #4a90e2;
+  --secondary-color: #2d3748;
+  --text-color: #fff;
+  --text-secondary: #a0aec0;
+  --bg-color: #1a202c;
+  --card-bg: #2d3748;
+  --border-color: #4a5568;
+  --footer-bg: #2d3748;
+  --footer-text: #f8f9fa;
+  --footer-text-secondary: #a0aec0;
+  --footer-link: #e2e8f0;
+  --footer-link-hover: #63b3ed;
+  --header-bg: #ffffff;
+  --header-text: #333333;
+  --header-link: #333333;
+  --header-link-hover: #007bff;
+  --header-border: #eaeaea;
+  --header-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  --hamburger-color: #333333;
+}
+
+/* Standard Icon Sizes */
+.icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Specific icon size variations */
+.contact-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.company-logo,
+.university-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  margin: 0 10px;
+}
+
+.award-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.theme-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.email-icon {
+  height: 28px;
+}
+
+/* Experience section company logos */
+.experience .company-logo {
+  max-width: 150px;
+  max-height: 60px;
+  width: auto;
+  height: auto;
+}
+
+/* Theme Toggle Button Styles */
+.theme-toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+  transform: scale(1.1);
+}
+
+.theme-icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease;
+  color: var(--text-color); /* Use your theme text color */
+}
+
+/* Dark mode styles */
+.dark-theme .theme-icon {
+  color: var(--text-color-dark); /* Use your dark theme text color */
+  transform: rotate(180deg);
+}
+
+/* Animation for the sun/moon transition */
+.theme-icon {
+  transition: transform 0.5s ease, color 0.3s ease;
+}
+
+/* body.dark-theme .icon:not(.company-logo):not(.university-logo) {
+  filter: invert(1) brightness(1.5);
+}
+
+body.dark-theme .company-logo,
+body.dark-theme .university-logo {
+  filter: brightness(0.8) contrast(1.2);
+} */

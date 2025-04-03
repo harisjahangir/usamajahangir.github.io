@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Usama Jahangir</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components/projects.css">
+</head>
+<body>
+  <div id="page-container">
+    <div id="header-container"></div>
+
+    <section id="projects">
+      <h1 class="title">Projects</h1>
+      <p class="section__text__p1">
+        I feel like every project is a dream project, so long as I'm learning something new.
+      </p>
+      
+      <div class="project-filter-container">
+        <button class="btn btn-color-2 project-btn active" onclick="filterProjects('all')">All</button>
+        <button class="btn btn-color-2 project-btn" onclick="filterProjects('robotics')">Robotics</button>
+        <button class="btn btn-color-2 project-btn" onclick="filterProjects('embedded')">Embedded</button>
+        <button class="btn btn-color-2 project-btn" onclick="filterProjects('software')">Software</button>
+        <button class="btn btn-color-2 project-btn" onclick="filterProjects('electronics')">Electronics</button>
+        <button class="btn btn-color-2 project-btn" onclick="filterProjects('mechanical')">Mechanical</button>
+      </div>
+
+      <div class="projects-grid" id="projects-container">
+        <!-- Projects will be loaded dynamically -->
+      </div>
+    </section>
+
+    <div id="footer-container"></div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/components/header.js"></script>
+  <script src="js/components/footer.js"></script>
+  <script src="js/components/projects.js"></script>
+</body>
+</html>
