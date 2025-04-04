@@ -3,29 +3,348 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Publications | Usama Jahangir</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/components/publications.css">
+  <title>Research Portfolio | Usama Jahangir</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/media-queries.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Research Page Specific Styles */
+    #research {
+      padding: 80px 0;
+      background-color: var(--background-color-2);
+    }
+    
+    .research-header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    
+    .research-header .title {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      color: var(--primary-color);
+    }
+    
+    .research-header .section__text__p1 {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+      color: var(--text-secondary);
+    }
+    
+    .research-section {
+      max-width: 1200px;
+      margin: 0 auto 50px;
+      padding: 0 20px;
+    }
+    
+    .section-title {
+      font-size: 1.8rem;
+      color: var(--primary-color);
+      margin-bottom: 25px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--primary-color);
+      display: inline-block;
+    }
+    
+    /* Research Interests */
+    .interests-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    
+    .interest-card {
+      background: white;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+    
+    .interest-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .interest-icon {
+      font-size: 2rem;
+      color: var(--primary-color);
+      margin-bottom: 15px;
+    }
+    
+    /* Research Profiles */
+    .profiles-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    
+    .profile-badge {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: white;
+      padding: 12px 20px;
+      border-radius: 30px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+      text-decoration: none;
+      color: var(--text-primary);
+    }
+    
+    .profile-badge:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      color: var(--primary-color);
+    }
+    
+    .profile-icon {
+      font-size: 1.2rem;
+    }
+    
+    /* Vertical Publications Timeline */
+    .publication-year {
+      margin: 40px 0;
+    }
+    
+    .year-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    
+    .year-title {
+      font-size: 1.5rem;
+      color: var(--primary-color);
+      margin: 0 15px 0 0;
+      padding: 5px 15px;
+      background-color: rgba(0,0,0,0.05);
+      border-radius: 20px;
+    }
+    
+    .timeline-line {
+      flex-grow: 1;
+      height: 2px;
+      background-color: var(--primary-color);
+      opacity: 0.3;
+    }
+    
+    .publications-vertical {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .publication-card-vertical {
+      background: white;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+      border-left: 4px solid var(--primary-color);
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .publication-card-vertical:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    }
+    
+    .pub-badge {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: white;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      margin-bottom: 15px;
+      align-self: flex-start;
+    }
+    
+    .pub-title {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: var(--text-primary);
+    }
+    
+    .pub-authors {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      margin-bottom: 10px;
+    }
+    
+    .pub-venue {
+      font-size: 0.9rem;
+      font-style: italic;
+      color: var(--text-secondary);
+      margin-bottom: 15px;
+    }
+    
+    .pub-actions {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    
+    .pub-btn {
+      padding: 8px 15px;
+      font-size: 0.85rem;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    
+    @media (max-width: 768px) {
+      .interests-container {
+        grid-template-columns: 1fr;
+      }
+      
+      .pub-actions {
+        flex-direction: column;
+      }
+      
+      .pub-btn {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
 </head>
 <body>
   <div id="page-container">
     <div id="header-container"></div>
 
-    <section id="publications">
-      <h1 class="title">Publications</h1>
-      <p class="section__text__p1">What we find changes who we become.</p>
+    <section id="research">
+      <div class="research-header">
+        <h1 class="title">Research Portfolio</h1>
+        <p class="section__text__p1">Bridging theory and practice through innovative research in mechatronics and robotics</p>
+      </div>
       
-      <div class="publications-details-container">
-        <div class="about-containers">
-          <div class="details-container publication-card">
-            <h2 class="publications-sub-title">Conference Paper</h2>
-            <p class="publication-details">
-              <strong>Usama Jahangir*</strong>, Fahad Aamir, Wajid Ali, Mohsin Tiwana and Hamid Jabbar. Assistive Feeding System: Design and Evaluation.<br>
-              In 2024 IEEE International Conference on Robotics and Automation in Industry (ICRAI) 18-19 December 2024
-            </p>
-            <button class="btn btn-color-1" onclick="window.open('./assets/publications/assistive-feeding-system-paper.pdf')">
-              View Paper
-            </button>
+      <!-- Research Interests Section -->
+      <div class="research-section">
+        <h2 class="section-title">Research Interests</h2>
+        <div class="interests-container">
+          <div class="interest-card">
+            <div class="interest-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <h3>Assistive Robotics</h3>
+            <p>Developing robotic systems to enhance quality of life for individuals with physical limitations, focusing on human-robot interaction and accessibility.</p>
+          </div>
+          
+          <div class="interest-card">
+            <div class="interest-icon">
+              <i class="fas fa-industry"></i>
+            </div>
+            <h3>Industrial Automation</h3>
+            <p>Researching adaptive control systems for industrial robots to improve manufacturing efficiency and worker safety.</p>
+          </div>
+          
+          <div class="interest-card">
+            <div class="interest-icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h3>AI in Mechatronics</h3>
+            <p>Exploring machine learning applications for predictive maintenance and autonomous decision-making in robotic systems.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Research Profiles Section -->
+      <div class="research-section">
+        <h2 class="section-title">Research Profiles</h2>
+        <div class="profiles-container">
+          <a href="https://orcid.org/your-orcid-id" target="_blank" class="profile-badge">
+            <i class="fab fa-orcid profile-icon"></i>
+            ORCID
+          </a>
+          <a href="https://scholar.google.com/citations?user=your-google-scholar-id" target="_blank" class="profile-badge">
+            <i class="fas fa-graduation-cap profile-icon"></i>
+            Google Scholar
+          </a>
+          <a href="https://www.researchgate.net/profile/your-profile" target="_blank" class="profile-badge">
+            <i class="fab fa-researchgate profile-icon"></i>
+            ResearchGate
+          </a>
+          <a href="https://www.linkedin.com/in/your-profile" target="_blank" class="profile-badge">
+            <i class="fab fa-linkedin profile-icon"></i>
+            LinkedIn
+          </a>
+          <a href="https://github.com/your-username" target="_blank" class="profile-badge">
+            <i class="fab fa-github profile-icon"></i>
+            GitHub
+          </a>
+        </div>
+      </div>
+      
+      <!-- Publications Section -->
+      <div class="research-section">
+        <h2 class="section-title">Publications</h2>
+        
+        <!-- 2024 Publications -->
+        <div class="publication-year">
+          <div class="year-header">
+            <h3 class="year-title">2024</h3>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="publications-vertical">
+            <div class="publication-card-vertical">
+              <span class="pub-badge">Conference Paper</span>
+              <h4 class="pub-title">Assistive Feeding System: Design and Evaluation</h4>
+              <p class="pub-authors">Usama Jahangir*, Fahad Aamir, Wajid Ali, Mohsin Tiwana, Hamid Jabbar</p>
+              <p class="pub-venue">IEEE International Conference on Robotics and Automation in Industry (ICRAI)</p>
+              <div class="pub-actions">
+                <button class="btn btn-color-1 pub-btn" onclick="window.open('./assets/research/assistive-feeding-system-paper.pdf')">
+                  <i class="fas fa-file-pdf"></i> PDF
+                </button>
+                <button class="btn btn-color-2 pub-btn" onclick="window.open('#')">
+                  <i class="fas fa-video"></i> Demo
+                </button>
+                <button class="btn btn-color-2 pub-btn" onclick="window.open('#')">
+                  <i class="fas fa-quote-right"></i> Cite
+                </button>
+              </div>
+            </div>
+            
+            <div class="publication-card-vertical">
+              <span class="pub-badge">Journal Paper</span>
+              <h4 class="pub-title">Adaptive Control Framework for Collaborative Industrial Robots</h4>
+              <p class="pub-authors">Usama Jahangir, Mohsin Tiwana, Hamid Jabbar</p>
+              <p class="pub-venue">IEEE Transactions on Industrial Electronics (Under Review)</p>
+              <div class="pub-actions">
+                <button class="btn btn-color-2 pub-btn" disabled>
+                  <i class="fas fa-hourglass-half"></i> Under Review
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 2023 Publications -->
+        <div class="publication-year">
+          <div class="year-header">
+            <h3 class="year-title">2023</h3>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="publications-vertical">
+            <div class="publication-card-vertical">
+              <span class="pub-badge">Conference Paper</span>
+              <h4 class="pub-title">Vision-Based Object Manipulation for Assistive Devices</h4>
+              <p class="pub-authors">Usama Jahangir, Wajid Ali, Hamid Jabbar</p>
+              <p class="pub-venue">International Conference on Robotics and Automation (ICRA)</p>
+              <div class="pub-actions">
+                <button class="btn btn-color-1 pub-btn" onclick="window.open('#')">
+                  <i class="fas fa-file-pdf"></i> PDF
+                </button>
+                <button class="btn btn-color-2 pub-btn" onclick="window.open('#')">
+                  <i class="fas fa-video"></i> Demo
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

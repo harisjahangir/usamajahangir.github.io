@@ -4,32 +4,253 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Usama Jahangir</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/components/contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/media-queries.css">
+  <style>
+    /* Clean Contact Page Styles */
+    :root {
+      --primary-color: #4361ee;
+      --secondary-color: #3f37c9;
+      --accent-color: #4cc9f0;
+      --dark-color: #1a1a2e;
+      --light-color: #f8f9fa;
+      --text-primary: #2b2d42;
+      --text-secondary: #6c757d;
+    }
+    
+    #contact {
+      padding: 5rem 2rem;
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      min-height: calc(100vh - 120px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    
+    .title {
+      font-size: 2.8rem;
+      margin-bottom: 1.5rem;
+      background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 700;
+    }
+    
+    .section__text__p1 {
+      font-size: 1.3rem;
+      color: var(--text-secondary);
+      max-width: 700px;
+      margin: 0 auto 3rem;
+      line-height: 1.6;
+    }
+    
+    /* Contact Info Container */
+    .contact-info-container {
+      max-width: 800px;
+      width: 100%;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      padding: 3rem;
+      margin: 0 auto;
+    }
+    
+    .contact-info-title {
+      font-size: 1.8rem;
+      margin-bottom: 2.5rem;
+      color: var(--dark-color);
+      position: relative;
+      padding-bottom: 1rem;
+    }
+    
+    .contact-info-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background-color: var(--primary-color);
+    }
+    
+    .contact-info-upper-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+    
+    .contact-info-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      transition: transform 0.3s ease;
+    }
+    
+    .contact-info-item:hover {
+      transform: translateY(-5px);
+    }
+    
+    .contact-icon {
+      font-size: 2rem;
+      color: var(--primary-color);
+      width: 70px;
+      height: 70px;
+      background: rgba(67, 97, 238, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .contact-info-item p {
+      margin: 0;
+      font-size: 1.1rem;
+      color: var(--text-primary);
+    }
+    
+    .contact-info-item a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    
+    .contact-info-item a:hover {
+      color: var(--secondary-color);
+      text-decoration: underline;
+    }
+    
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    
+    .social-link {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: rgba(67, 97, 238, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      color: var(--primary-color);
+      transition: all 0.3s ease;
+    }
+    
+    .social-link:hover {
+      background: var(--primary-color);
+      color: white;
+      transform: translateY(-3px);
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      #contact {
+        padding: 3rem 1.5rem;
+      }
+      
+      .title {
+        font-size: 2.2rem;
+      }
+      
+      .section__text__p1 {
+        font-size: 1.1rem;
+      }
+      
+      .contact-info-container {
+        padding: 2rem;
+      }
+      
+      .contact-info-title {
+        font-size: 1.5rem;
+      }
+      
+      .contact-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.8rem;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .contact-info-container {
+        padding: 1.5rem;
+      }
+      
+      .contact-info-item p {
+        font-size: 1rem;
+      }
+      
+      .social-link {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <div id="page-container">
     <div id="header-container"></div>
 
     <section id="contact">
-      <h1 class="title">Contact Me</h1>
-      <p class="section__text__p1">Let's engineer the future together!</p>
+      <h1 class="title">Get In Touch</h1>
+      <p class="section__text__p1">Let's engineer the future together! Reach out for collaborations or opportunities.</p>
       
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img src="./assets/icons/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
-          <p><a href="mailto:mr.usama.jahangir@gmail.com">mr.usama.jahangir@gmail.com</a></p>
+      <div class="contact-info-container">
+        
+        <div class="contact-info-upper-container">
+          <div class="contact-info-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <p>Email</p>
+            <a href="mailto:mr.usama.jahangir@gmail.com">mr.usama.jahangir@gmail.com</a>
+          </div>
+          
+          <div class="contact-info-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <p>Phone</p>
+            <a href="tel:+923136112460">+92 313 6112460</a>
+          </div>
+          
+          <div class="contact-info-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <p>Location</p>
+            <p>Lahore, Pakistan</p>
+          </div>
         </div>
-        <div class="contact-info-container">
-          <img src="./assets/icons/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
-          <p><a href="https://www.linkedin.com/in/usama--jahangir/" target="_blank">LinkedIn</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img src="./assets/icons/phone.png" alt="Phone icon" class="icon contact-icon"/>
-          <p><a href="tel:+923136112460">+92-313-6112460</a></p>
+        
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/usama--jahangir/" target="_blank" class="social-link">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/yourusername" target="_blank" class="social-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://twitter.com/yourhandle" target="_blank" class="social-link">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://scholar.google.com/citations?user=yourid" target="_blank" class="social-link">
+            <i class="fas fa-graduation-cap"></i>
+          </a>
         </div>
       </div>
-      
     </section>
 
     <div id="footer-container"></div>
@@ -38,6 +259,22 @@
   <script src="js/main.js"></script>
   <script src="js/components/header.js"></script>
   <script src="js/components/footer.js"></script>
-  <script src="js/components/contact.js"></script>
+  <script>
+    // Simple animation for contact items
+    document.addEventListener('DOMContentLoaded', function() {
+      const contactItems = document.querySelectorAll('.contact-info-item');
+      
+      contactItems.forEach((item, index) => {
+        item.style.opacity = '0';
+        item.style.transform = 'translateY(20px)';
+        item.style.transitionDelay = `${index * 0.1}s`;
+        
+        setTimeout(() => {
+          item.style.opacity = '1';
+          item.style.transform = 'translateY(0)';
+        }, 500 + (index * 100));
+      });
+    });
+  </script>
 </body>
 </html>

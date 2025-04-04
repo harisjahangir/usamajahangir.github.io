@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education & Experience | Usama Jahangir</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/media-queries.css">
+  <style>
+    /* Modern Education/Experience Page Styles */
+    :root {
+      --primary-color: #4361ee;
+      --secondary-color: #3f37c9;
+      --accent-color: #4cc9f0;
+      --dark-color: #1a1a2e;
+      --light-color: #f8f9fa;
+      --text-primary: #2b2d42;
+      --text-secondary: #6c757d;
+    }
+    
+    #journey {
+      padding: 5rem 2rem;
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      min-height: calc(100vh - 120px);
+    }
+    
+    .title {
+      font-size: 2.8rem;
+      margin-bottom: 1.5rem;
+      background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      font-weight: 700;
+    }
+    
+    /* Toggle Switch */
+    .journey-toggle {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 3rem;
+      border-radius: 50px;
+      background: white;
+      padding: 0.5rem;
+      max-width: 400px;
+      margin: 0 auto 3rem;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .toggle-btn {
+      flex: 1;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      background: transparent;
+      font-weight: 600;
+      font-size: 1.1rem;
+      cursor: pointer;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+    
+    .toggle-btn.active {
+      background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+      color: white;
+      box-shadow: 0 5px 15px rgba(67, 97, 238, 0.3);
+    }
+    
+    /* Timeline Cards */
+    .journey-container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    
+    .journey-section {
+      display: none;
+    }
+    
+    .journey-section.active {
+      display: block;
+      animation: fadeIn 0.5s ease;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .timeline-card {
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      margin-bottom: 2rem;
+      border-left: 4px solid var(--primary-color);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+    }
+    
+    .timeline-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    }
+    
+    .timeline-header {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+    }
+    
+    .timeline-logo {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      margin-right: 1.5rem;
+      border-radius: 8px;
+      background: white;
+      padding: 0.5rem;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+    
+    .timeline-title {
+      flex: 1;
+    }
+    
+    .timeline-title h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: var(--dark-color);
+    }
+    
+    .timeline-date {
+      color: var(--primary-color);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    
+    .timeline-position {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      margin-bottom: 0.5rem;
+    }
+    
+    .timeline-details {
+      margin-left: 5.5rem;
+    }
+    
+    .timeline-details ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    
+    .timeline-details li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 0.8rem;
+      line-height: 1.6;
+    }
+    
+    .timeline-details li::before {
+      content: "•";
+      color: var(--primary-color);
+      font-size: 1.5rem;
+      position: absolute;
+      left: 0;
+      top: -0.2rem;
+    }
+    
+    .award-badge {
+      display: inline-flex;
+      align-items: center;
+      background: rgba(76, 201, 240, 0.1);
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      margin-top: 1rem;
+      color: var(--primary-color);
+    }
+    
+    .award-icon {
+      margin-right: 0.5rem;
+      color: var(--accent-color);
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      #journey {
+        padding: 3rem 1.5rem;
+      }
+      
+      .title {
+        font-size: 2.2rem;
+      }
+      
+      .timeline-header {
+        flex-direction: column;
+      }
+      
+      .timeline-logo {
+        margin-right: 0;
+        margin-bottom: 1rem;
+      }
+      
+      .timeline-details {
+        margin-left: 0;
+      }
+      
+      .toggle-btn {
+        padding: 0.7rem 1rem;
+        font-size: 1rem;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .journey-toggle {
+        flex-direction: column;
+        border-radius: 12px;
+        padding: 0.5rem;
+      }
+      
+      .toggle-btn {
+        border-radius: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="page-container">
+    <div id="header-container"></div>
+
+    <section id="journey">
+      <h1 class="title">My Journey</h1>
+      
+      <div class="journey-toggle">
+        <button class="toggle-btn active" onclick="showSection('education')">
+          <i class="fas fa-graduation-cap"></i> Education
+        </button>
+        <button class="toggle-btn" onclick="showSection('experience')">
+          <i class="fas fa-briefcase"></i> Experience
+        </button>
+      </div>
+      
+      <div class="journey-container">
+        <!-- Education Section -->
+        <div id="education" class="journey-section active">
+          <!-- NUST -->
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <a href="https://nust.edu.pk/" target="_blank">
+                <img src="./assets/icons/nust.png" alt="NUST" class="timeline-logo"/>
+              </a>
+              <div class="timeline-title">
+                <h2>National University of Sciences and Technology</h2>
+                <div class="timeline-date">2019 - 2023</div>
+                <div class="timeline-position">BEng. Mechatronics Engineering</div>
+              </div>
+            </div>
+            <div class="timeline-details">
+              <ul>
+                <li><strong>Thesis (Capstone Project):</strong> Assistive Feeding System - Designed a robotic system to help individuals with mobility impairments</li>
+                <li><strong>Major Courses:</strong> Robotics, Industrial Automation, Mechatronics System Design, Control Systems</li>
+                <li><strong>Minor Courses:</strong> Machine Learning, Databases, Automotive Manufacturing Systems</li>
+                <li><strong>GPA:</strong> 3.7/4.0 (Summa Cum Laude)</li>
+              </ul>
+              <div class="award-badge">
+                <i class="fas fa-award award-icon"></i>
+                <span><strong>Rector's Gold Medal:</strong> Awarded for best capstone project in Department of Mechatronics Engineering</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- GCU Lahore -->
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <a href="https://gcu.edu.pk/" target="_blank">
+                <img src="./assets/icons/gcu.png" alt="GCU Lahore" class="timeline-logo"/>
+              </a>
+              <div class="timeline-title">
+                <h2>Government College University, Lahore</h2>
+                <div class="timeline-date">2017 - 2019</div>
+                <div class="timeline-position">Pre-Engineering</div>
+              </div>
+            </div>
+            <div class="timeline-details">
+              <ul>
+                <li><strong>External Grade:</strong> A+ <strong>Internal Grade:</strong> A</li>
+                <li>Class representative junior and senior year</li>
+                <li>Participated in national science competitions</li>
+                <li>Member of Robotics Club and Debate Society</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Experience Section -->
+        <div id="experience" class="journey-section">
+          <!-- Example Experience Card 1 -->
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <a href="#" target="_blank">
+                <img src="./assets/icons/company1.png" alt="Company Logo" class="timeline-logo"/>
+              </a>
+              <div class="timeline-title">
+                <h2>Robotics Research Lab</h2>
+                <div class="timeline-date">2022 - Present</div>
+                <div class="timeline-position">Research Assistant</div>
+              </div>
+            </div>
+            <div class="timeline-details">
+              <ul>
+                <li>Developed autonomous navigation algorithms for mobile robots using ROS and SLAM</li>
+                <li>Implemented computer vision systems for object recognition and manipulation</li>
+                <li>Collaborated on 2 published research papers in robotics conferences</li>
+                <li>Mentored junior students on robotics projects</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Example Experience Card 2 -->
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <a href="#" target="_blank">
+                <img src="./assets/icons/company2.png" alt="Company Logo" class="timeline-logo"/>
+              </a>
+              <div class="timeline-title">
+                <h2>Automation Solutions Ltd.</h2>
+                <div class="timeline-date">Summer 2021</div>
+                <div class="timeline-position">Engineering Intern</div>
+              </div>
+            </div>
+            <div class="timeline-details">
+              <ul>
+                <li>Designed PLC programs for industrial automation systems</li>
+                <li>Assisted in troubleshooting and maintenance of robotic assembly lines</li>
+                <li>Created documentation for equipment operation and safety procedures</li>
+                <li>Participated in client meetings and requirement gathering</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer-container"></div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/components/header.js"></script>
+  <script src="js/components/footer.js"></script>
+  <script>
+    function showSection(sectionId) {
+      // Hide all sections
+      document.querySelectorAll('.journey-section').forEach(section => {
+        section.classList.remove('active');
+      });
+      
+      // Show selected section
+      document.getElementById(sectionId).classList.add('active');
+      
+      // Update active button
+      document.querySelectorAll('.toggle-btn').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      event.currentTarget.classList.add('active');
+    }
+    
+    // Initialize with education section visible
+    document.addEventListener('DOMContentLoaded', function() {
+      // Animate timeline cards
+      const cards = document.querySelectorAll('.timeline-card');
+      cards.forEach((card, index) => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        card.style.transitionDelay = `${index * 0.1}s`;
+        
+        setTimeout(() => {
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
+        }, 500 + (index * 100));
+      });
+    });
+  </script>
+</body>
+</html>

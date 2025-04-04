@@ -23,21 +23,3 @@ function setActiveLink() {
     }
   });
 }
-
-// Add to your existing dark theme toggle function
-function toggleTheme() {
-  document.body.classList.toggle('dark-theme');
-  // Update theme icon
-  updateThemeIcon();
-  // Save preference
-  localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark' : 'light');
-}
-
-function updateThemeIcon() {
-  const isDark = document.body.classList.contains('dark-theme');
-  const icons = document.querySelectorAll('.theme-icon');
-  
-  icons.forEach(icon => {
-    icon.src = isDark ? './assets/icons/moon.png' : './assets/icons/sun.png';
-  });
-}

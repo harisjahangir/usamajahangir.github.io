@@ -1,16 +1,16 @@
-<header style="background-color: var(--header-bg); color: var(--header-text); box-shadow: var(--header-shadow);">
+<header>
+  <!-- Desktop Navigation -->
   <nav id="desktop-nav">
-    <div class="logo" style="color: var(--header-text);">Portfolio</div>
+    <div class="logo">Portfolio</div>
     <ul class="nav-links">
-      <li><a href="index.html" style="color: var(--header-link);">About</a></li>
-      <li><a href="experience.html" style="color: var(--header-link);">Experience</a></li>
-      <li><a href="education.html" style="color: var(--header-link);">Education</a></li>
-      <li><a href="projects.html" style="color: var(--header-link);">Projects</a></li>
-      <li><a href="research.html" style="color: var(--header-link);">Research</a></li>
-      <li><a href="contact.html" style="color: var(--header-link);">Contact</a></li>
+      <li><a href="index.html">About</a></li>
+      <li><a href="projects.html">Odyssey</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="journey.html">Journey</a></li>
+      <li><a href="contact.html">Contact</a></li>
       <li>
-        <button id="theme-toggle" class="theme-toggle-btn" onclick="toggleTheme()" aria-label="Toggle theme" title="Toggle theme" style="color: var(--header-text);">
-          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="24" height="24" fill="currentColor" class="theme-icon" viewBox="0 0 32 32" style="color: var(--header-text);">
+        <button id="theme-toggle" class="theme-toggle-btn" onclick="toggleTheme()" aria-label="Toggle theme" title="Toggle theme">
+          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="24" height="24" fill="currentColor" class="theme-icon" viewBox="0 0 32 32">
             <clipPath id="theme-toggle-cutout">
               <path d="M0 0h42v30a1 1 0 00-16 13H0Z" />
             </clipPath>
@@ -31,26 +31,24 @@
     </ul>
   </nav>
 
-  <nav id="hamburger-nav" style="background-color: var(--header-bg);">
-    <div class="logo" style="color: var(--header-text);">Portfolio</div>
+  <!-- Mobile Navigation -->
+  <nav id="hamburger-nav">
+    <div class="logo">Portfolio</div>
     <div class="hamburger-menu">
       <div class="hamburger-icon" onclick="toggleMenu()" aria-label="Toggle menu">
-        <span style="background-color: var(--hamburger-color);"></span>
-        <span style="background-color: var(--hamburger-color);"></span>
-        <span style="background-color: var(--hamburger-color);"></span>
+        <span style="color: black;"></span>
+        <span style="color: black;"></span>
+        <span style="color: black;"></span>
       </div>
-      <div class="menu-links" style="background-color: var(--header-bg);">
-        <li><a href="index.html" onclick="toggleMenu()" style="color: var(--header-link);">About</a></li>
-        <li><a href="experience.html" onclick="toggleMenu()" style="color: var(--header-link);">Experience</a></li>
-        <li><a href="education.html" onclick="toggleMenu()" style="color: var(--header-link);">Education</a></li>
-        <li><a href="projects.html" onclick="toggleMenu()" style="color: var(--header-link);">Projects</a></li>
-        <li><a href="research.html" onclick="toggleMenu()" style="color: var(--header-link);">Research</a></li>
-        <li><a href="contact.html" onclick="toggleMenu()" style="color: var(--header-link);">Contact</a></li>
+      <div class="menu-links">
+        <li><a href="index.html" onclick="toggleMenu()">About</a></li>
+        <li><a href="projects.html" onclick="toggleMenu()">Odyssey</a></li>
+        <li><a href="research.html" onclick="toggleMenu()">Research</a></li>
+        <li><a href="journey.html" onclick="toggleMenu()">Journey</a></li>
+        <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
       </div>
-    </div>
-    <ul class="nav-links">
-      <button id="theme-toggle-mobile" class="theme-toggle-btn" onclick="toggleTheme()" aria-label="Toggle theme" title="Toggle theme" style="color: var(--header-text);">
-        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="24" height="24" fill="currentColor" class="theme-icon" viewBox="0 0 32 32" style="color: var(--header-text);">
+      <button id="theme-toggle-mobile" class="theme-toggle-btn" onclick="toggleTheme()" aria-label="Toggle theme" title="Toggle theme">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="24" height="24" fill="currentColor" class="theme-icon" viewBox="0 0 32 32">
           <clipPath id="theme-toggle-mobile-cutout">
             <path d="M0 0h42v30a1 1 0 00-16 13H0Z" />
           </clipPath>
@@ -67,6 +65,9 @@
           </g>
         </svg>
       </button>
-    </ul>
+    </div>
+
+   
+
   </nav>
 </header>

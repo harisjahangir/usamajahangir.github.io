@@ -1,4 +1,4 @@
-/* UTILITY CLASSES */
+/* ===== LAYOUT ===== */
 .container {
     max-width: var(--max-width);
     margin: 0 auto;
@@ -9,8 +9,13 @@
     padding: var(--section-padding) 0;
   }
   
-  .text-center {
-    text-align: center;
+  .section-container {
+    display: flex;
+    gap: var(--gap-lg);
+  }
+  
+  .grid {
+    display: grid;
   }
   
   .flex-center {
@@ -19,6 +24,6 @@
     align-items: center;
   }
   
-  .grid {
-    display: grid;
+  .text-center {
+    text-align: center;
   }

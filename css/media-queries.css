@@ -1,0 +1,118 @@
+/* ===== MEDIA QUERIES ===== */
+
+/* Default styles (desktop first) */
+#desktop-nav {
+  display: flex;
+}
+
+#hamburger-nav {
+  display: none;
+}
+
+/* Large desktop screens (1400px and below) */
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  
+  .about-containers {
+    flex-wrap: wrap;
+  }
+
+}
+
+/* Tablets and small laptops (1200px and below) - switch to mobile nav */
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  
+  #hamburger-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  
+  #profile,
+  .section-container {
+    display: flex;
+  }
+  
+  section,
+  .section-container {
+    height: fit-content;
+    margin: 0 5%;
+
+  }
+  
+  .section__pic-container {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto 2rem;
+  }
+  
+  .about-containers {
+    margin-top: 0;
+  }
+  
+  .arrow {
+    display: none;
+  }
+}
+
+/* Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+  .section-container {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .about-details-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .about-pic {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile devices (600px and below) */
+@media screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+  
+  section {
+    margin: 0 2%;
+  }
+  
+  #profile {
+    height: auto;
+    margin-bottom: 0;
+    flex-direction: column;
+  }
+  
+  .contact-info-upper-container {
+    flex-direction: column;
+  }
+  
+  .contact-info-container {
+    flex-direction: column;
+  }
+  
+  .company-logo,
+  .university-logo {
+    width: 80px;
+    height: 80px;
+  }
+}
