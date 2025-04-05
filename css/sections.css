@@ -54,7 +54,7 @@ header {
     align-items: center;
     gap: var(--gap-lg);
     padding: var(--section-padding) 0;
-    min-height: 100vh;
+    min-height: 90vh;
   }
   
   .section__pic-container {
@@ -288,6 +288,113 @@ header {
     transition: all var(--transition-speed) ease;
   }
 
+  /********************************************************* About  *********************************************************/
+  #about {
+    padding: 12vh 0 5vh;
+    background-color: var(--background-color-2);
+    color: var(--text-color);
+  }
+  
+  .about-intro {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    background: var(--background-color-1);
+    padding: 2rem;
+  }
+
+  
+  .about-image {
+    flex: 0 0 200px;
+  }
+  
+  .about-image img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border: 3px solid var(--accent-color);
+  }
+  
+  .section__text {
+    flex: 1;
+  }
+  
+  .about-intro .title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    position: relative;
+  }
+  
+  .about-intro .title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 80px;
+    height: 4px;
+    background: var(--accent-color);
+    border-radius: 2px;
+  }
+  
+  .about-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-color-light);
+    text-align: justify;
+    hyphens: auto;
+    margin: 0;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      gap: 1.5rem;
+      text-align: center;
+    }
+    
+    .about-image {
+      flex: 0 0 auto;
+      width: 150px;
+    }
+    
+    .about-intro .title {
+      font-size: 2rem;
+    }
+    
+    .about-intro .title::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .about-description {
+      font-size: 1rem;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #about {
+      padding: 8vh 0 3vh;
+    }
+    
+    .about-content {
+      padding: 1.5rem;
+    }
+    
+    .about-intro .title {
+      font-size: 1.8rem;
+    }
+  }
+
   /********************************************************* Research *********************************************************/
   #research {
     padding: 80px 0;
@@ -481,7 +588,7 @@ header {
   
   .title {
     font-size: 2.8rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
     text-align: center;
     font-weight: 700;
   }
@@ -771,11 +878,11 @@ header {
   }
 
   /********************************************************* Skills Section *********************************************************/
-#skills {
-  background: none;
+  #skills {
+    background: none;
   padding: var(--section-padding) 0;
   /* background-color: var(--card-bg); */
-}
+  }
 
 .section-title {
   text-align: center;

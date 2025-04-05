@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Usama Jahangir</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/media-queries.css">
+  <link rel="icon" type="image/png" href="./assets/profile-pic.png">
+</head>
+<body>
+  <div id="page-container">
+    <header id="header-container"></header>
+
+    <section id="about">
+      <div class="container">
+        <div class="about-intro section-container">
+          <div class="about-content">
+            <div class="about-image">
+              <img src="./assets/icons/about-pic.png" alt="Usama Jahangir">
+            </div>
+            <div class="section__text">
+              <h1 class="title">Who Am I?</h1>
+              <p class="about-description">
+                Mechatronics Engineer with a focus on robotics and computing, backed by ∼ 2 years of industry experience in embedded systems, industrial automation, and sensor fusion, complemented by academic research.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div id="skills" class="section" style="text-align: center;">
+          <div class="section-title" >
+            <h2>Tech Stack</h2>
+          </div>
+          
+          <div class="skill-categories">
+            <button class="skill-category-btn active" data-category="programming">
+              <i class="fas fa-code"></i> Programming
+            </button>
+            <button class="skill-category-btn" data-category="tools">
+              <i class="fas fa-tools"></i> Tools
+            </button>
+            <button class="skill-category-btn" data-category="frameworks">
+              <i class="fas fa-cubes"></i> Frameworks
+            </button>
+          </div>
+          
+          <div class="skills-container">
+            <!-- Programming Skills -->
+            <div class="skill-group active" id="programming-skills">
+              <div class="skill-item">
+                <div class="skill-circle">
+                  <i class="fab fa-python"></i>
+                </div>
+                <p>Python</p>
+              </div>
+              <div class="skill-item">
+                <div class="skill-circle">
+                  <i class="fas fa-c"></i>
+                </div>
+                <p>C</p>
+              </div>
+            </div>
+            
+            <!-- Tools Skills -->
+            <div class="skill-group" id="tools-skills">
+              <div class="skill-item">
+                <div class="skill-circle">
+                  <i class="fab fa-git-alt"></i>
+                </div>
+                <p>Git</p>
+              </div>
+              <div class="skill-item">
+                <div class="skill-circle">
+                  <i class="fab fa-docker"></i>
+                </div>
+                <p>Docker</p>
+              </div>
+              <div class="skill-item">
+                <div class="skill-circle">
+                  <i class="fab fa-linux"></i>
+                </div>
+                <p>Linux</p>
+              </div>
+              <div class="skill-item">
+                <div class="skill-circle">
+                  <i class="fas fa-terminal"></i>
+                </div>
+                <p>Bash</p>
+              </div>
+              <div class="skill-item">
+                <div class="skill-circle">
+                  <i class="fas fa-code"></i>
+                </div>
+                <p>VS Code</p>
+              </div>
+            </div>
+            
+            <!-- Frameworks Skills -->
+            <div class="skill-group" id="frameworks-skills">
+              <div class="skill-item">
+                <div class="skill-circle">
+                  <i class="fas fa-robot"></i>
+                </div>
+                <p>ROS</p>
+              </div>
+              <div class="skill-item">
+                <div class="skill-circle">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <p>NumPy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer-container"></footer>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/components/header.js"></script>
+  <script src="js/components/footer.js"></script>
+  <script src="js/components/skills.js"></script>
+</body>
+</html>
