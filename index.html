@@ -6,6 +6,7 @@
   <title>Usama Jahangir - Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/sections.css">
   <link rel="stylesheet" href="css/animations.css">
@@ -14,44 +15,215 @@
 </head>
 <body>
   <div id="page-container">
-    <div id="header-container"></div>
+    <header id="header-container"></header>
+    
     <section id="profile">
-      <div class="bubbles-container"></div>
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Usama Jahangir profile picture" />
+      <div class="container section-container">
+        <div class="section__pic-container">
+          <img src="./assets/profile-pic.png" alt="Usama Jahangir profile picture" />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p2">Hi, I'm</p>
+          <h1 class="title">Usama Jahangir</h1>
+          <p class="section__text__p2">Algorithm Engineer (Sensor Fusion)</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./assets/Usama-Jahangir-Resume.pdf')">
+              Download CV
+            </button>
+          </div>
+          <div class="social-links">
+            <a href="mailto:mr.usama.jahangir@gmail.com" target="_blank" class="social-link">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/usama--jahangir/" target="_blank" class="social-link">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/yourusername" target="_blank" class="social-link">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hi, I'm</p>
-        <h1 class="title">Usama Jahangir</h1>
-        <p class="section__text__p2">Algorithm Engineer (Sensor Fusion)</p>
-        <div class="btn-container">
-          <button class="btn btn-color-2" onclick="window.open('./assets/Usama-Jahangir-Resume.pdf')">
-            Download CV
-          </button>
-          <button class="btn btn-color-2" onclick="location.href='contact.html'">
-            Contact Info
-          </button>
+      <div>
+      <section id="skills" class="section">
+        <div class="container" style="text-align: center;">
+          <div class="section-title">
+            <h2>Stack</h2>
+          </div>
+          
+          <div class="skill-categories">
+            <button class="skill-category-btn active" data-category="programming">
+              <i class="fas fa-code"></i> Programming
+            </button>
+            <button class="skill-category-btn" data-category="tools">
+              <i class="fas fa-tools"></i> Tools
+            </button>
+            <button class="skill-category-btn" data-category="frameworks">
+              <i class="fas fa-cubes"></i> Frameworks
+            </button>
+            <button class="skill-category-btn" data-category="languages">
+              <i class="fas fa-language"></i> Languages
+            </button>
+          </div>
+          
+          <div class="skills-container">
+            <!-- Programming Skills -->
+            <div class="skill-group active" id="programming-skills">
+              <div class="skill-item">
+                <div class="skill-circle">
+                  <i class="fab fa-python"></i>
+                </div>
+                <p>Python</p>
+          
+              </div>
+              <div class="skill-item">
+                <div class="skill-circle">
+                  <i class="fas fa-c"></i>
+                </div>
+                <p>C++</p>
+          
+              </div>
+              <div class="skill-item">
+                <div class="skill-circle">
+                  <i class="fab fa-java"></i>
+                </div>
+                <p>Java</p>
+          
+              </div>
+              <div class="skill-item">
+                <div class="skill-circle">
+                  <i class="fab fa-js"></i>
+                </div>
+                <p>JavaScript</p>
+          
+              </div>
+              <div class="skill-item">
+                <div class="skill-circle">
+                  <i class="fas fa-database"></i>
+                </div>
+                <p>SQL</p>
+          
+              </div>
+            </div>
+            
+            <!-- Tools Skills -->
+            <div class="skill-group" id="tools-skills">
+              <div class="skill-item">
+                <div class="skill-circle">
+                  <i class="fab fa-git-alt"></i>
+                </div>
+                <p>Git</p>
+          
+              </div>
+              <div class="skill-item">
+                <div class="skill-circle">
+                  <i class="fab fa-docker"></i>
+                </div>
+                <p>Docker</p>
+          
+              </div>
+              <div class="skill-item">
+                <div class="skill-circle">
+                  <i class="fab fa-linux"></i>
+                </div>
+                <p>Linux</p>
+          
+              </div>
+              <div class="skill-item">
+                <div class="skill-circle">
+                  <i class="fas fa-terminal"></i>
+                </div>
+                <p>Bash</p>
+          
+              </div>
+              <div class="skill-item">
+                <div class="skill-circle">
+                  <i class="fas fa-code"></i>
+                </div>
+                <p>VS Code</p>
+          
+              </div>
+            </div>
+            
+            <!-- Frameworks Skills -->
+            <div class="skill-group" id="frameworks-skills">
+              <div class="skill-item">
+                <div class="skill-circle">
+                  <i class="fas fa-robot"></i>
+                </div>
+                <p>ROS</p>
+          
+              </div>
+              <div class="skill-item">
+                <div class="skill-circle">
+                  <i class="fab fa-react"></i>
+                </div>
+                <p>React</p>
+          
+              </div>
+              <div class="skill-item">
+                <div class="skill-circle">
+                  <i class="fas fa-network-wired"></i>
+                </div>
+                <p>TensorFlow</p>
+          
+              </div>
+              <div class="skill-item">
+                <div class="skill-circle">
+                  <i class="fas fa-brain"></i>
+                </div>
+                <p>PyTorch</p>
+          
+              </div>
+              <div class="skill-item">
+                <div class="skill-circle">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <p>NumPy</p>
+          
+              </div>
+            </div>
+            
+            <!-- Languages Skills -->
+            <div class="skill-group" id="languages-skills">
+              <div class="skill-item">
+                <div class="skill-circle">
+                  <i class="fas fa-globe"></i>
+                </div>
+                <p>English</p>
+          
+              </div>
+              <div class="skill-item">
+                <div class="skill-circle">
+                  <i class="fas fa-globe"></i>
+                </div>
+                <p>German</p>
+          
+              </div>
+              <div class="skill-item">
+                <div class="skill-circle">
+                  <i class="fas fa-globe"></i>
+                </div>
+                <p>Urdu</p>
+          
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/usama--jahangir/" target="_blank" class="social-link">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://github.com/yourusername" target="_blank" class="social-link">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://twitter.com/yourhandle" target="_blank" class="social-link">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="https://scholar.google.com/citations?user=yourid" target="_blank" class="social-link">
-            <i class="fas fa-graduation-cap"></i>
-          </a>
-        </div>
+      </section>
       </div>
     </section>
-    <div id="footer-container"></div>
+
+
+
+    <footer id="footer-container"></footer>
   </div>
+
   <script src="js/main.js"></script>
   <script src="js/components/header.js"></script>
   <script src="js/components/footer.js"></script>
+  <script src="js/components/skills.js"></script>
+  <script src="js/components/projects.js"></script>
+  <script src="js/components/journey.js"></script>
 </body>
 </html>

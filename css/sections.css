@@ -13,13 +13,21 @@ header {
   footer {
     color: var(--primary-color);
     border-top: 1px solid var(--border-color);
-    padding: 1rem;
+    padding: 2rem 0;
     text-align: center;
     width: 100%;
     position: relative;
     bottom: 0;
   }
   
+  #footer-container{  
+    padding: 0.5rem 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: 1rem;
+  }
+
   .footer-content {
     max-width: 1200px;
     margin: 0 auto;
@@ -61,7 +69,6 @@ header {
   
   .section__text__p2 {
     font-size: 1.75rem;
-    margin-bottom: 1rem;
     color: var(--text-secondary);
   }
   
@@ -127,7 +134,7 @@ header {
     font-size: 1.25rem;
     color: var(--gray-dark);
     max-width: 750px;
-    margin: 0 auto 3rem;
+    margin: 0 auto 1rem;
     line-height: 1.7;
   }
   
@@ -151,17 +158,12 @@ header {
     overflow: hidden;
   }
   
-  .project-btn.active {
-    background-color: var(--gray-dark);
-    border-color: var(--text-color);
-    color: var(--text-color);
-    box-shadow: 0 5px 15px rgba(67, 97, 238, 0.3);
-  }
-  
+  .project-btn.active,
   .project-btn:not(.active):hover {
-    background-color: rgba(67, 97, 238, 0.1);
-    color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: white;
     transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   }
   
   /* Projects Grid */
@@ -175,7 +177,6 @@ header {
   
   /* Project Card */
   .project-card {
-    /* background: white; */
     border-color: var(--text-color);
     border-radius: 16px;
     overflow: hidden;
@@ -217,7 +218,7 @@ header {
     width: 0;
     height: 100%;
     background: rgba(26, 26, 46, 0.8);
-    transition: width 0.5s ease;
+    transition: width 0.4s ease;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -326,9 +327,9 @@ header {
   
   /* Research Interests */
   .interests-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
   }
   
   .interest-card {
@@ -516,11 +517,12 @@ header {
   }
   
   .toggle-btn.active {
-    background: var(--gray-dark);
-    color: var(--text-color);
-    box-shadow: 0 5px 15px rgba(67, 97, 238, 0.3);
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   }
-  
+
   /* Timeline Cards */
   .journey-container {
     max-width: 1000px;
@@ -636,7 +638,7 @@ header {
   }
 
   /********************************************************* Contact *********************************************************/
-  #contact {
+  /* #contact {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -671,7 +673,7 @@ header {
     font-size: 1.3rem;
     color: var(--text-secondary);
     max-width: 700px;
-    margin: 0 auto 3rem;
+    margin: 0 auto 1rem;
     line-height: 1.6;
   }
   
@@ -740,7 +742,7 @@ header {
   .contact-info-item a:hover {
     color: var(--primary-color);
     text-decoration: underline;
-  }
+  } */
   
   .social-links {
     display: flex;
@@ -753,7 +755,7 @@ header {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: rgba(67, 97, 238, 0.1);
+    background-color: var(--gray-light);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -767,11 +769,127 @@ header {
     color: white;
     transform: translateY(-3px);
   }
-  
-  /********************************************************* Footer *********************************************************/
-  footer {
-    margin-top: auto;
-    background-color: var(--card-bg);
-    padding: 2rem 0;
-    text-align: center;
+
+  /********************************************************* Skills Section *********************************************************/
+#skills {
+  background: none;
+  padding: var(--section-padding) 0;
+  /* background-color: var(--card-bg); */
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  display: inline-block;
+}
+
+.section-title h2::after {
+  content: '';
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: var(--primary-color);
+  border-radius: 2px;
+}
+
+.skill-categories {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.skill-category-btn {
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  font-weight: 600;
+  background: none;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: all var(--transition-speed) ease;
+}
+
+.skill-category-btn.active,
+.skill-category-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.skills-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.skill-group {
+  display: none;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.skill-group.active {
+  display: grid;
+  animation: fadeIn 0.5s ease;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+}
+
+.skill-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--gray-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  transition: all var(--transition-speed) ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* .skill-item:hover .skill-circle {
+  background-color: var(--primary-color);
+  color: white;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+} */
+
+.skill-item p {
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+/* Animation for skill groups */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
