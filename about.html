@@ -22,103 +22,233 @@
         <div class="about-intro section-container">
           <div class="about-content">
             <div class="about-image">
-              <!-- <img src=var(--profile-pic) alt="Usama Jahangir"> -->
             </div>
             <div class="section__text">
               <h1 class="title">Who Am I?</h1>
               <p class="about-description">
-                Mechatronics Engineer with a focus on robotics and computing, backed by ∼ 2 years of industry experience in embedded systems, industrial automation, and sensor fusion, complemented by academic research.
+                Mechatronics Engineer with a focus on computing and robotics with industryexperience in embedded system design, industrial automation, and sensor fusion, paired with academic research.
               </p>
+              <!-- Stats Boxes -->
+        <div class="stats-container">
+          <div class="stat-box">
+            <div class="stat-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="stat-content">
+              <h3 class="stat-number">~2 yrs</h3>
+              <p class="stat-title">Experience</p>
+            </div>
+          </div>
+          
+          <div class="stat-box">
+            <div class="stat-icon">
+              <i class="fas fa-project-diagram"></i>
+            </div>
+            <div class="stat-content">
+              <h3 class="stat-number">15+</h3>
+              <p class="stat-title">Industry Projects</p>
+            </div>
+          </div>
+          
+          <div class="stat-box">
+            <div class="stat-icon">
+              <i class="fas fa-microchip"></i>
+            </div>
+            <div class="stat-content">
+              <h3 class="stat-number">1</h3>
+              <p class="stat-title">Publication</p>
+            </div>
+          </div>
+        </div>
             </div>
           </div>
         </div>
 
+        
+
         <!-- Skills Section -->
-        <div id="skills" class="section" style="text-align: center;">
-          <div class="section-title" >
-            <h2>Tech Stack</h2>
-          </div>
-          
-          <div class="skill-categories">
-            <button class="skill-category-btn active" data-category="programming">
-              <i class="fas fa-code"></i> Programming
-            </button>
-            <button class="skill-category-btn" data-category="tools">
-              <i class="fas fa-tools"></i> Tools
-            </button>
-            <button class="skill-category-btn" data-category="frameworks">
-              <i class="fas fa-cubes"></i> Frameworks
-            </button>
-          </div>
-          
-          <div class="skills-container">
-            <!-- Programming Skills -->
-            <div class="skill-group active" id="programming-skills">
-              <div class="skill-item">
-                <div class="skill-circle">
-                  <i class="fab fa-python"></i>
-                </div>
-                <p>Python</p>
-              </div>
-              <div class="skill-item">
-                <div class="skill-circle">
-                  <i class="fas fa-c"></i>
-                </div>
-                <p>C</p>
-              </div>
-            </div>
-            
-            <!-- Tools Skills -->
-            <div class="skill-group" id="tools-skills">
-              <div class="skill-item">
-                <div class="skill-circle">
-                  <i class="fab fa-git-alt"></i>
-                </div>
-                <p>Git</p>
-              </div>
-              <div class="skill-item">
-                <div class="skill-circle">
-                  <i class="fab fa-docker"></i>
-                </div>
-                <p>Docker</p>
-              </div>
-              <div class="skill-item">
-                <div class="skill-circle">
-                  <i class="fab fa-linux"></i>
-                </div>
-                <p>Linux</p>
-              </div>
-              <div class="skill-item">
-                <div class="skill-circle">
-                  <i class="fas fa-terminal"></i>
-                </div>
-                <p>Bash</p>
-              </div>
-              <div class="skill-item">
-                <div class="skill-circle">
-                  <i class="fas fa-code"></i>
-                </div>
-                <p>VS Code</p>
-              </div>
-            </div>
-            
-            <!-- Frameworks Skills -->
-            <div class="skill-group" id="frameworks-skills">
-              <div class="skill-item">
-                <div class="skill-circle">
-                  <i class="fas fa-robot"></i>
-                </div>
-                <p>ROS</p>
-              </div>
-              <div class="skill-item">
-                <div class="skill-circle">
-                  <i class="fas fa-chart-line"></i>
-                </div>
-                <p>NumPy</p>
-              </div>
-            </div>
-          </div>
+<div id="skills" class="section" style="text-align: center;">
+  <div class="section-title">
+    <h2>Tech Stack</h2>
+  </div>
+  
+  <div class="skill-categories">
+    <button class="skill-category-btn active" data-category="programming">
+      <i class="fas fa-code"></i> Programming
+    </button>
+    <button class="skill-category-btn" data-category="embedded">
+      <i class="fas fa-microchip"></i> Embedded Systems
+    </button>
+    <button class="skill-category-btn" data-category="robotics">
+      <i class="fas fa-robot"></i> Robotics & AI
+    </button>
+    <button class="skill-category-btn" data-category="tools">
+      <i class="fas fa-tools"></i> Tools & DevOps
+    </button>
+  </div>
+  
+  <div class="skills-container">
+    <!-- Programming Skills -->
+    <div class="skill-group active" id="programming-skills">
+      <div class="skill-item">
+        <div class="skill-circle">
+          <i class="fas fa-c"></i>
         </div>
+        <p>C</p>
+      </div>
+      <div class="skill-item">
+        <div class="skill-circle">
+          <i class="fab fa-python"></i>
+        </div>
+        <p>Python</p>
+      </div>
+      <div class="skill-item">
+        <div class="skill-circle">
+          <i class="fas fa-c" style="font-size: large;">++</i>
+        </div>
+        <p>C++</p>
+      </div>
+      <div class="skill-item">
+        <div class="skill-circle">
+          <i class="fab fa-android"></i>
+        </div>
+        <p>Kotlin</p>
+      </div>
+      <div class="skill-item">
+        <div class="skill-circle">
+          <i class="fas fa-code"></i>
+        </div>
+        <p>RESTfull APIs</p>
+      </div>
+    </div>
+    
+    <!-- Embedded Systems Skills -->
+    <div class="skill-group" id="embedded-skills">
+      <div class="skill-item">
+        <div class="skill-circle">
+          <i class="fas fa-project-diagram"></i>
+        </div>
+        <p>CAN / I2C / UART / SMBus</p>
+      </div>
+      <div class="skill-item">
+        <div class="skill-circle">
+          <i class="fas fa-bolt"></i>
+        </div>
+        <p>MQTT</p>
+      </div>
+      <div class="skill-item">
+        <div class="skill-circle">
+          <i class="fas fa-microchip"></i>
+        </div>
+        <p>ESP32 / ATMega 328</p>
+      </div>
+      <div class="skill-item">
+        <div class="skill-circle">
+          <i class="fas fa-tasks"></i>
+        </div>
+        <p>FreeRTOS</p>
+      </div>
+      <div class="skill-item">
+        <div class="skill-circle">
+          <i class="fas fa-server"></i>
+        </div>
+        <p>SoC (BCM2711, RK3588)</p>
+      </div>
+    </div>
+    
+    <!-- Robotics & AI Skills -->
+    <div class="skill-group" id="robotics-skills">
+      <div class="skill-item">
+        <div class="skill-circle">
+          <i class="fas fa-robot"></i>
+        </div>
+        <p>ROS2</p>
+      </div>
+      <div class="skill-item">
+        <div class="skill-circle">
+          <i class="fas fa-filter"></i>
+        </div>
+        <p>Sensor Fusion (LKF, EKF)</p>
+      </div>
+      <div class="skill-item">
+        <div class="skill-circle">
+          <i class="fas fa-eye"></i>
+        </div>
+        <p>OpenCV/YOLO</p>
+      </div>
+      <div class="skill-item">
+        <div class="skill-circle">
+          <i class="fas fa-project-diagram"></i>
+        </div>
+        <p>Sensor Integration</p>
+      </div>
+      <div class="skill-item">
+        <div class="skill-circle">
+          <i class="fas fa-cube"></i>
+        </div>
+        <p>3D Printing (FDM)</p>
+      </div>
+    </div>
+    
+    <!-- Tools & DevOps Skills -->
+    <div class="skill-group" id="tools-skills">
+      <div class="skill-item">
+        <div class="skill-circle">
+          <i class="fab fa-git-alt"></i>
+        </div>
+        <p>Git</p>
+      </div>
+      <div class="skill-item">
+        <div class="skill-circle">
+          <i class="fab fa-docker"></i>
+        </div>
+        <p>Docker</p>
+      </div>
+      <div class="skill-item">
+        <div class="skill-circle">
+          <i class="fab fa-gitlab"></i>
+        </div>
+        <p>GitLab CI/CD</p>
+      </div>
+      <div class="skill-item">
+        <div class="skill-circle">
+          <i class="fab fa-linux"></i>
+        </div>
+        <p>Linux</p>
+      </div>
+      <div class="skill-item">
+        <div class="skill-circle">
+          <i class="fas fa-terminal"></i>
+        </div>
+        <p>Shell Scripting</p>
+      </div>
+      <div class="skill-item">
+        <div class="skill-circle">
+          <i class="fas fa-code"></i>
+        </div>
+        <p>VS Code</p>
+      </div>
+      <div class="skill-item">
+        <div class="skill-circle">
+          <i class="fas fa-cube"></i>
+        </div>
+        <p>SOLIDWORKS</p>
+      </div>
+      <div class="skill-item">
+        <div class="skill-circle">
+          <i class="fas fa-project-diagram"></i>
+        </div>
+        <p>Proteus</p>
+      </div>
+      <div class="skill-item">
+        <div class="skill-circle">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <p>MATLAB/Simulink</p>
+      </div>
+    </div>
+  </div>
+</div>
       </div>
     </section>
 

@@ -10,72 +10,26 @@
   <link rel="stylesheet" href="css/sections.css">
   <link rel="stylesheet" href="css/media-queries.css">
   <link rel="icon" type="image/png" href="./assets/profile-pic.png">
-  <style>
-    /* Modern Education/Experience Page Styles */
-
-    
-    
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      #journey {
-        padding: 3rem 1.5rem;
-      }
-      
-      .title {
-        font-size: 2.2rem;
-      }
-      
-      .timeline-header {
-        flex-direction: column;
-      }
-      
-      .timeline-logo {
-        margin-right: 0;
-        margin-bottom: 1rem;
-      }
-      
-      .timeline-details {
-        margin-left: 0;
-      }
-      
-      .toggle-btn {
-        padding: 0.7rem 1rem;
-        font-size: 1rem;
-      }
-    }
-    
-    @media (max-width: 480px) {
-      .journey-toggle {
-        flex-direction: column;
-        border-radius: 12px;
-        padding: 0.5rem;
-      }
-      
-      .toggle-btn {
-        border-radius: 8px;
-      }
-    }
-  </style>
 </head>
 <body>
   <div id="page-container">
     <div id="header-container"></div>
 
     <section id="journey">
-      <h1 class="title">My Journey</h1>
+      <!-- <h1 class="title">My Journey</h1> -->
       
       <div class="journey-toggle">
-        <button class="toggle-btn active" onclick="showSection('education')">
-          <i class="fas fa-graduation-cap"></i> Education
+        <button class="toggle-btn active" onclick="showSection('experience')">
+          <i class="fas fa-graduation-cap"></i> Experience
         </button>
-        <button class="toggle-btn" onclick="showSection('experience')">
-          <i class="fas fa-briefcase"></i> Experience
+        <button class="toggle-btn" onclick="showSection('education')">
+          <i class="fas fa-briefcase"></i> Education
         </button>
       </div>
       
       <div class="journey-container">
         <!-- Education Section -->
-        <div id="education" class="journey-section active">
+        <div id="education" class="journey-section">
           <!-- NUST -->
           <div class="timeline-card">
             <div class="timeline-header">
@@ -83,21 +37,26 @@
                 <img src="./assets/icons/nust.png" alt="NUST" class="timeline-logo"/>
               </a>
               <div class="timeline-title">
-                <h2>National University of Sciences and Technology</h2>
+                <h2>Bachelor of Mechatronics Engineering</h2>
                 <div class="timeline-date">2019 - 2023</div>
-                <div class="timeline-position">BEng. Mechatronics Engineering</div>
+                <div class="timeline-position">National University of Sciences and Technology, Pakistan</div>
               </div>
             </div>
             <div class="timeline-details">
               <ul>
-                <li><strong>Thesis (Capstone Project):</strong> Assistive Feeding System - Designed a robotic system to help individuals with mobility impairments</li>
-                <li><strong>Major Courses:</strong> Robotics, Industrial Automation, Mechatronics System Design, Control Systems</li>
-                <li><strong>Minor Courses:</strong> Machine Learning, Databases, Automotive Manufacturing Systems</li>
-                <li><strong>GPA:</strong> 3.7/4.0 (Summa Cum Laude)</li>
+                <li><strong>Major Coursework:</strong> Mechatronics and Robotics </li>
+                <li><strong>Minor Coursework:</strong> Machine Learning, Databases, Automotive Manufacturing Systems</li>
+                <li><strong>Thesis (Capstone Project):</strong> Assistive Feeding System - A robotic system to help individuals with eating</li>
+                <li><strong>Master's Courses (Audit):</strong> Artificial Neural Networks, Advance Embedded System and Biomedical Instrumentation</li>
+                <li><strong>GPA:</strong> 3.66/4.00</li>
               </ul>
               <div class="award-badge">
                 <i class="fas fa-award award-icon"></i>
                 <span><strong>Rector's Gold Medal:</strong> Awarded for best capstone project in Department of Mechatronics Engineering</span>
+              </div>
+              <div class="award-badge">
+                <i class="fas fa-award award-icon"></i>
+                <span><strong>2x Distinguished Student Awards:</strong> Received for securing SGPA > 3.5 in 4 consecutive semesters</span>
               </div>
             </div>
           </div>
@@ -109,16 +68,15 @@
                 <img src="./assets/icons/gcu.png" alt="GCU Lahore" class="timeline-logo"/>
               </a>
               <div class="timeline-title">
-                <h2>Government College University, Lahore</h2>
+                <h2>Pre-Engineering (Intermediate)</h2>
                 <div class="timeline-date">2017 - 2019</div>
-                <div class="timeline-position">Pre-Engineering</div>
+                <div class="timeline-position">Government College University, Lahore</div>
               </div>
             </div>
             <div class="timeline-details">
               <ul>
                 <li><strong>External Grade:</strong> A+ <strong>Internal Grade:</strong> A</li>
                 <li>Class representative junior and senior year</li>
-                <li>Participated in national science competitions</li>
                 <li>Member of Robotics Club and Debate Society</li>
               </ul>
             </div>
@@ -126,17 +84,37 @@
         </div>
         
         <!-- Experience Section -->
-        <div id="experience" class="journey-section">
+        <div id="experience" class="journey-section active">
           <!-- Example Experience Card 1 -->
           <div class="timeline-card">
             <div class="timeline-header">
               <a href="#" target="_blank">
-                <img src="./assets/icons/company1.png" alt="Company Logo" class="timeline-logo"/>
+                <img src="./assets/icons/software-motion.png" alt="Software Motion" class="timeline-logo"/>
               </a>
               <div class="timeline-title">
-                <h2>Robotics Research Lab</h2>
-                <div class="timeline-date">2022 - Present</div>
-                <div class="timeline-position">Research Assistant</div>
+                <h2>Algorithm Engineer (Sensor Fusion)</h2>
+                <div class="timeline-date">Dec 2024 - Present</div>
+                <div class="timeline-position">Software Motion</div>
+              </div>
+            </div>
+            <div class="timeline-details">
+              <ul>
+                <li>Developed autonomous navigation algorithms for mobile robots using ROS and SLAM</li>
+                <li>Implemented computer vision systems for object recognition and manipulation</li>
+                <li>Collaborated on 2 published research papers in robotics conferences</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <a href="#" target="_blank">
+                <img src="./assets/icons/cowlar-design-studio.svg" alt="Cowlar Design Studio" class="timeline-logo"/>
+              </a>
+              <div class="timeline-title">
+                <h2>Team Lead, Industrial Automation</h2>
+                <div class="timeline-date">Sep 2024 - Oct 2024</div>
+                <div class="timeline-position">Cowlar Design Studio</div>
               </div>
             </div>
             <div class="timeline-details">
@@ -146,6 +124,35 @@
                 <li>Collaborated on 2 published research papers in robotics conferences</li>
                 <li>Mentored junior students on robotics projects</li>
               </ul>
+              <div class="award-badge">
+                <i class="fas fa-award award-icon"></i>
+                <span><strong>Houston Award:</strong> Awarded for exceptional leadership and performance in industrial autoamtion sector</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <a href="#" target="_blank">
+                <img src="./assets/icons/cowlar-design-studio.svg" alt="Cowlar Design Studio" class="timeline-logo"/>
+              </a>
+              <div class="timeline-title">
+                <h2>Embedded Design Engineer</h2>
+                <div class="timeline-date">Jun 2023 - Aug 2024</div>
+                <div class="timeline-position">Cowlar Design Studio</div>
+              </div>
+            </div>
+            <div class="timeline-details">
+              <ul>
+                <li>Developed autonomous navigation algorithms for mobile robots using ROS and SLAM</li>
+                <li>Implemented computer vision systems for object recognition and manipulation</li>
+                <li>Collaborated on 2 published research papers in robotics conferences</li>
+                <li>Mentored junior students on robotics projects</li>
+              </ul>
+              <div class="award-badge">
+                <i class="fas fa-award award-icon"></i>
+                <span><strong>Trailblazer:</strong> Honored with Trailblazer title after first self-presentation on annual design retreat</span>
+              </div>
             </div>
           </div>
           
@@ -153,12 +160,12 @@
           <div class="timeline-card">
             <div class="timeline-header">
               <a href="#" target="_blank">
-                <img src="./assets/icons/company2.png" alt="Company Logo" class="timeline-logo"/>
+                <img src="./assets/icons/qadri-group.png" alt="Qadri Group" class="timeline-logo"/>
               </a>
               <div class="timeline-title">
-                <h2>Automation Solutions Ltd.</h2>
-                <div class="timeline-date">Summer 2021</div>
-                <div class="timeline-position">Engineering Intern</div>
+                <h2>Leaders for Manufacturing Intern</h2>
+                <div class="timeline-date">Summer 2022</div>
+                <div class="timeline-position">Qadri Group</div>
               </div>
             </div>
             <div class="timeline-details">
@@ -166,10 +173,30 @@
                 <li>Designed PLC programs for industrial automation systems</li>
                 <li>Assisted in troubleshooting and maintenance of robotic assembly lines</li>
                 <li>Created documentation for equipment operation and safety procedures</li>
-                <li>Participated in client meetings and requirement gathering</li>
               </ul>
             </div>
           </div>
+
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <a href="#" target="_blank">
+                <img src="./assets/icons/ncra.png" alt="NCRA" class="timeline-logo"/>
+              </a>
+              <div class="timeline-title">
+                <h2>Research and Development Intern</h2>
+                <div class="timeline-date">Summer 2021</div>
+                <div class="timeline-position">National Centre of Robotics and Automation</div>
+              </div>
+            </div>
+            <div class="timeline-details">
+              <ul>
+                <li>Designed PLC programs for industrial automation systems</li>
+                <li>Assisted in troubleshooting and maintenance of robotic assembly lines</li>
+                <li>Created documentation for equipment operation and safety procedures</li>
+              </ul>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>

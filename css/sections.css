@@ -110,7 +110,7 @@ header {
   /********************************************************* Projects Section ******************************************************/
   
   #projects {
-    padding-top: 80px;
+    padding-top: 100px;
   }
 
   .projects-grid {
@@ -136,7 +136,7 @@ header {
   .section__text__p1 {
     text-align: center;
     font-size: 1.25rem;
-    color: var(--gray-dark);
+    color: var(--text-secondary);
     max-width: 750px;
     margin: 0 auto 1rem;
     line-height: 1.7;
@@ -294,7 +294,7 @@ header {
 
   /********************************************************* About  *********************************************************/
   #about {
-    padding: 12vh 0 5vh;
+    padding: 80px;
     background-color: var(--background-color-2);
     color: var(--text-color);
   }
@@ -354,6 +354,85 @@ header {
     hyphens: auto;
     margin: 0;
   }
+
+ /* Stats Boxes - Wider with Border */
+.stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 0;
+  gap: 10px; /* Reduced from 20px */
+}
+
+.stat-box {
+  background: var(--card-bg-color);
+  border-radius: 18px;
+  padding: 15px;
+  width: 100%;
+  max-width: 150px; /* Increased from 300px */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+  /* border: 3px solid var(--primary-color); Added border */
+  flex-grow: 1; /* Allows boxes to grow equally */
+  margin: 0 5px; /* Small margin to prevent touching */
+}
+
+.stat-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-color-dark); /* Optional: darken border on hover */
+}
+
+.stat-icon {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.stat-number {
+  font-size: 1.0rem; /* Slightly larger than before */
+  font-weight: 600;
+  color: var(--primary-color);
+  margin: 8px 0; /* Adjusted spacing */
+}
+
+.stat-title {
+  font-size: 1.0rem; /* Slightly larger than before */
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.stat-description {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.3;
+}
+
+@media (max-width: 992px) {
+  .stat-box {
+    max-width: 280px; /* Slightly smaller on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-container {
+    justify-content: center; /* Center boxes on tablet */
+    gap: 15px;
+  }
+  
+  .stat-box {
+    width: 45%; /* Two per row */
+    max-width: none;
+    margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .stat-box {
+    width: 100%; /* Full width on mobile */
+    max-width: 100%;
+  }
+}
   
   /* Responsive adjustments */
   @media (max-width: 768px) {
@@ -399,7 +478,7 @@ header {
 
   /********************************************************* Research *********************************************************/
   #research {
-    padding: 80px 0;
+    padding: 100px 0;
     background-color: var(--background-color-2);
   }
   
@@ -584,7 +663,7 @@ header {
 /********************************************************* Journey *********************************************************/
 
   #journey {
-    padding: 5rem 2rem;
+    padding: 100px 0;
     min-height: calc(100vh - 120px);
   }
   
@@ -599,12 +678,12 @@ header {
   .journey-toggle {
     display: flex;
     justify-content: center;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     border-radius: 50px;
     background: var(--bg-color);
     padding: 0.5rem;
     max-width: 400px;
-    margin: 0 auto 3rem;
+    margin: 0 auto 1.5rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   }
   
@@ -701,7 +780,7 @@ header {
   }
   
   .timeline-position {
-    font-size: 1.1rem;
+    font-size: 1.0rem;
     color: var(--text-secondary);
     margin-bottom: 0.5rem;
   }
@@ -718,8 +797,8 @@ header {
   .timeline-details li {
     position: relative;
     padding-left: 1.5rem;
-    margin-bottom: 0.8rem;
-    line-height: 1.6;
+    margin-bottom: 0.5rem;
+    line-height: 1.0;
   }
   
   .timeline-details li::before {
