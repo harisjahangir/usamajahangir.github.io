@@ -8,6 +8,15 @@
     cursor: pointer;
     transition: all 0.3s ease;
   }
+
+  .btn2 {
+    font-weight: 600;
+    padding: 1rem;
+    width: 12rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
   
   .btn-container {
     display: flex;
