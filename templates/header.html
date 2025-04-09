@@ -1,0 +1,74 @@
+<header>
+  <!-- Desktop Navigation -->
+  <nav id="desktop-nav">
+    <div class="logo">Portfolio</div>
+    <ul class="nav-links">
+      <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Odyssey</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="journey.html">Journey</a></li>
+      <li>
+        <button id="theme-toggle" class="theme-toggle-btn" onclick="toggleTheme()" aria-label="Toggle theme" title="Toggle theme">
+          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="24" height="24" fill="currentColor" class="theme-icon" viewBox="0 0 32 32">
+            <clipPath id="theme-toggle-cutout">
+              <path d="M0 0h42v30a1 1 0 00-16 13H0Z" />
+            </clipPath>
+            <g clip-path="url(#theme-toggle-cutout)">
+              <circle cx="16" cy="16" r="8.4" />
+              <g>
+                <circle cx="16" cy="3.3" r="2.3" />
+                <circle cx="27" cy="9.7" r="2.3" />
+                <circle cx="27" cy="22.3" r="2.3" />
+                <circle cx="16" cy="28.7" r="2.3" />
+                <circle cx="5" cy="22.3" r="2.3" />
+                <circle cx="5" cy="9.7" r="2.3" />
+              </g>
+            </g>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Mobile Navigation -->
+  <nav id="hamburger-nav">
+    <div class="logo">Portfolio</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span style="color: black;"></span>
+        <span style="color: black;"></span>
+        <span style="color: black;"></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+        <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+        <li><a href="projects.html" onclick="toggleMenu()">Odyssey</a></li>
+        <li><a href="research.html" onclick="toggleMenu()">Research</a></li>
+        <li><a href="journey.html" onclick="toggleMenu()">Journey</a></li>
+        
+      </div>
+      <button id="theme-toggle-mobile" class="theme-toggle-btn" onclick="toggleTheme()" aria-label="Toggle theme" title="Toggle theme">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="24" height="24" fill="currentColor" class="theme-icon" viewBox="0 0 32 32">
+          <clipPath id="theme-toggle-mobile-cutout">
+            <path d="M0 0h42v30a1 1 0 00-16 13H0Z" />
+          </clipPath>
+          <g clip-path="url(#theme-toggle-mobile-cutout)">
+            <circle cx="16" cy="16" r="8.4" />
+            <g>
+              <circle cx="16" cy="3.3" r="2.3" />
+              <circle cx="27" cy="9.7" r="2.3" />
+              <circle cx="27" cy="22.3" r="2.3" />
+              <circle cx="16" cy="28.7" r="2.3" />
+              <circle cx="5" cy="22.3" r="2.3" />
+              <circle cx="5" cy="9.7" r="2.3" />
+            </g>
+          </g>
+        </svg>
+      </button>
+    </div>
+
+   
+
+  </nav>
+</header>

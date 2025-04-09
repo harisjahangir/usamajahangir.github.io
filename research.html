@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usama Jahangir - Portfolio</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/media-queries.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="./assets/profile-pic.png">
+  <style>
+    /* Research Page Specific Styles */
+    
+    
+    @media (max-width: 768px) {
+      .interests-container {
+        grid-template-columns: 1fr;
+      }
+      
+      .pub-actions {
+        flex-direction: column;
+      }
+      
+      .pub-btn {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="page-container">
+    <div id="header-container"></div>
+
+    <section id="research">
+      <div class="research-header">
+        <!-- <h1 class="title">Research</h1> -->
+        <p class="section__text__p1">What we find, changes who we become.</p>
+      </div>
+      
+      <!-- Research Section -->
+      <div class="research-section">
+        <h2 class="section-title">Research Interests</h2>
+        <p>My research interests lie at the intersection of robotics and computing, focusing on perception, decision-making, planning and control algorithms, and embedded systems. I have applied these across domains such as ADAS, industrial automation, assistive robotics, and IoT. I am also exploring formal methods and software verification to enhance the reliability and safety of autonomous systems in complex, safety-critical environments.</p><br>
+        <p>Currently, I am developing sensor fusion algorithms for ADAS, focusing on the integration of data from heterogeneous sensor modalities—such as cameras, radar, LiDAR, and IMU—to enhance environmental perception, system robustness, and real-time performance under dynamic conditions.</p><br>
+        <div class="profiles-container">
+          <a href="https://orcid.org/0009-0004-2403-4966" target="_blank" class="profile-badge">
+            <i class="fab fa-orcid profile-icon"></i>
+            ORCID
+          </a>
+          <a href="https://scholar.google.com/citations?user=ATu142QAAAAJ" target="_blank" class="profile-badge">
+            <i class="fas fa-graduation-cap profile-icon"></i>
+            Google Scholar
+          </a>
+        </div>
+      </div>
+      
+      <!-- Publications Section -->
+      <div class="research-section">
+        <h2 class="section-title">Publications</h2>
+        
+        <!-- 2024 Publications -->
+        <div class="publication-year">
+          <div class="year-header">
+            <h3 class="year-title">2024</h3>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="publications-vertical">
+            <div class="publication-card-vertical">
+              <span class="pub-badge">Conference Paper</span>
+              <h4 class="pub-title">Assistive Feeding System: Design and Evaluation</h4>
+              <p class="pub-authors"><strong>Usama Jahangir</strong>, Fahad Aamir, Wajid Ali, Mohsin Tiwana, Hamid Jabbar. (2024). "Assistive Feeding System: Design and Evaluation" Proceedings of the 6th IEEE International Conference of Robotics and Automation in Industry. DOI: <a href="https://doi.org/10.1109/ICRAI62391.2024.10894327" target="_blank">10.1109/ICRAI62391.2024.10894327</a></p>
+              <!-- <p class="pub-venue">IEEE International Conference on Robotics and Automation in Industry (ICRAI)</p> -->
+              <div class="pub-actions">
+                <button class="btn btn-color-2 pub-btn" onclick="window.open('./assets/documents/ICRAI_2024_Conference_Publication_Assistive_Feeding_System_Design_and_Evaluation.pdf')">
+                  <i class="fas fa-file-pdf"></i> PDF
+                </button>
+                <button class="btn btn-color-2 pub-btn" onclick="window.open('https://ieeexplore.ieee.org/document/10894327')">
+                  <i class="fas fa-link"></i> IEEE
+                </button>
+                <!-- <button class="btn btn-color-2 pub-btn" onclick="window.open('#')">
+                  <i class="fas fa-quote-right"></i> Cite
+                </button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Misc. Publications -->
+        <div class="publication-year">
+            <div class="year-header">
+              <h3 class="year-title">Misc.</h3>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="publications-vertical">
+              <div class="publication-card-vertical">
+                <span class="pub-badge">Bachelor's Thesis</span>
+                <h4 class="pub-title">Assistive Feeding System</h4>
+                <p class="pub-authors">Usama Jahangir, Wajid Ali, Muhammad Fahad Aamir</p>
+                <div class="pub-actions">
+                  <button class="btn btn-color-2 pub-btn" onclick="window.open('./assets/documents/Thesis-Assistive-Feeding-System-Usama-Jahangir.pdf')">
+                    <i class="fas fa-file-pdf"></i> PDF
+                  </button>
+                  <button class="btn btn-color-2 pub-btn" onclick="window.open('https://youtu.be/RmsqwGzjRZM')">
+                    <i class="fab fa-youtube"></i> Demo
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>  
+
+          <div class="publications-vertical">
+            <div class="publication-card-vertical">
+              <span class="pub-badge">Report</span>
+              <h4 class="pub-title">Design and Analysis of Harvester Robot</h4>
+              <p class="pub-authors">Usama Jahangir, Muhammad Fahad Aamir, Wajid Ali, Muhammad Abdullah, Muhammad Awais Fazal-e-Qadeer, Bilal Amin</p>
+              <div class="pub-actions">
+                <button class="btn btn-color-2 pub-btn" onclick="window.open('./assets/documents/Report-Material-Selection-Harvester-Robot-Usama-Jahangir.pdf')">
+                  <i class="fas fa-file-pdf"></i> PDF
+                </button>
+                <button class="btn btn-color-2 pub-btn" onclick="window.open('https://youtube.com/shorts/u0WpC-MwnhM')">
+                  <i class="fab fa-youtube"></i> Demo
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="publications-vertical">
+            <div class="publication-card-vertical">
+              <span class="pub-badge">Report</span>
+              <h4 class="pub-title">Design and Impact analysis on a frameless chaises construction of Volvo bus for different speeds</h4>
+              <p class="pub-authors">Usama Jahangir, Muhammad Ameer Usman, Muhammad Jawad Haider</p>
+              <div class="pub-actions">
+                <button class="btn btn-color-2 pub-btn" onclick="window.open('./assets/documents/Design-and-impact-analysis-on-a-frameless-chaises.pdf')">
+                  <i class="fas fa-file-pdf"></i> PDF
+                </button>
+              </div>
+            </div>
+          </div> -->
+
+
+        </div>
+      </div>
+    </section>
+    <div id="footer-container"></div>
+  </div>
+  <script src="js/main.js"></script>
+  <script src="js/components/header.js"></script>
+  <script src="js/components/footer.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+/* ===== BASE STYLES ===== */
+:root {
+    /* Colors */
+    --primary-color: #333;
+    --secondary-color: #666;
+    --text-color: #333;
+    --text-secondary: #666;
+    --bg-color: #fff;
+    --card-bg: #fff;
+    --border-color: #ddd;
+    --gray-light: #e9ecef;
+    --gray-dark: #a7c3fc;
+    
+    /* Spacing */
+    --gap-sm: 0.5rem;
+    --gap-md: 1rem;
+    --gap-lg: 2rem;
+    --section-padding: 4rem;
+    
+    /* Sizes */
+    --max-width: 1200px;
+    --border-radius: 2rem;
+
+    /* Transition */
+    --transition-speed: 0.3s;
+    --profile-image: url('../assets/profile-pic.png');
+  }
+  
+  /* Reset & Global Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+
+  .nav-links li a.active,
+  .menu-links li a.active {
+      font-weight: bold;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /********************************************************* Dark Theme *********************************************************/
+  .dark-theme {
+    --primary-color: #8cc0fc;
+    --secondary-color: #2d3748;
+    --text-color: #fff;
+    --text-secondary: #a0aec0;
+    --bg-color: #1a202c;
+    --card-bg: #2d3748;
+    --border-color: #4a5568;
+    --gray-light: #2d3748;
+    --gray-dark: #617eb9;
+    --profile-image: url('../assets/night-pic.png');
+  }

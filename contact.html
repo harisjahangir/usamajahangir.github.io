@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usama Jahangir - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/media-queries.css">
+  <link rel="icon" type="image/png" href="./assets/profile-pic.png">
+</head>
+<body>
+  <div id="page-container">
+    <div id="header-container"></div>
+
+    <section id="contact">
+      <h1 class="title">Get In Touch</h1>
+      <p class="section__text__p1">Let's engineer the future together! Reach out for collaborations or opportunities.</p>
+      
+      <div class="contact-info-container">
+        
+        <div class="contact-info-upper-container">
+          <div class="contact-info-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <a href="mailto:mr.usama.jahangir@gmail.com">mr.usama.jahangir@gmail.com</a>
+          </div>
+          
+          <div class="contact-info-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <a href="tel:+923136112460">+92 313 6112460</a>
+          </div>
+          
+          <div class="contact-info-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <p>Lahore, Pakistan</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div style="padding-bottom: 19rem;"></div>
+    <div id="footer-container"></div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/components/header.js"></script>
+  <script src="js/components/footer.js"></script>
+  <script>
+    // Simple animation for contact items
+    document.addEventListener('DOMContentLoaded', function() {
+      const contactItems = document.querySelectorAll('.contact-info-item');
+      
+      contactItems.forEach((item, index) => {
+        item.style.opacity = '0';
+        item.style.transform = 'translateY(20px)';
+        item.style.transitionDelay = `${index * 0.1}s`;
+        
+        setTimeout(() => {
+          item.style.opacity = '1';
+          item.style.transform = 'translateY(0)';
+        }, 500 + (index * 100));
+      });
+    });
+  </script>
+</body>
+</html>

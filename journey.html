@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usama Jahangir - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/media-queries.css">
+  <link rel="icon" type="image/png" href="./assets/profile-pic.png">
+</head>
+<body>
+  <div id="page-container">
+    <div id="header-container"></div>
+
+    <section id="journey">
+      <!-- <h1 class="title">My Journey</h1> -->
+      
+      <div class="journey-toggle">
+        <button class="toggle-btn active" onclick="showSection('experience')">
+          <i class="fas fa-graduation-cap"></i> Experience
+        </button>
+        <button class="toggle-btn" onclick="showSection('education')">
+          <i class="fas fa-briefcase"></i> Education
+        </button>
+      </div>
+      
+      <div class="journey-container">
+        <!-- Education Section -->
+        <div id="education" class="journey-section">
+          <!-- NUST -->
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <a href="https://nust.edu.pk/" target="_blank">
+                <img src="./assets/icons/nust.png" alt="NUST" class="timeline-logo"/>
+              </a>
+              <div class="timeline-title">
+                <h2>Bachelor of Mechatronics Engineering</h2>
+                <div class="timeline-date">2019 - 2023</div>
+                <div class="timeline-position">National University of Sciences and Technology, Pakistan</div>
+              </div>
+            </div>
+            <div class="timeline-details">
+              <ul>
+                <li><strong>Major Coursework:</strong> Mechatronics and Robotics </li>
+                <li><strong>Minor Coursework:</strong> Machine Learning, Databases, Automotive Manufacturing Systems</li>
+                <li><strong>Thesis (Capstone Project):</strong> Assistive Feeding System - A robotic system to help individuals with eating</li>
+                <li><strong>Master's Courses (Audit):</strong> Artificial Neural Networks, Advance Embedded System and Biomedical Instrumentation</li>
+                <li><strong>GPA:</strong> 3.66/4.00</li>
+              </ul>
+              <div class="award-badge">
+                <i class="fas fa-award award-icon"></i>
+                <span><strong>Rector's Gold Medal:</strong> Awarded for best capstone project in Department of Mechatronics Engineering</span>
+              </div>
+              <div class="award-badge">
+                <i class="fas fa-award award-icon"></i>
+                <span><strong>2x Distinguished Student Awards:</strong> Received for securing SGPA > 3.5 in 4 consecutive semesters</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- GCU Lahore -->
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <a href="https://gcu.edu.pk/" target="_blank">
+                <img src="./assets/icons/gcu.png" alt="GCU Lahore" class="timeline-logo"/>
+              </a>
+              <div class="timeline-title">
+                <h2>Pre-Engineering (Intermediate)</h2>
+                <div class="timeline-date">2017 - 2019</div>
+                <div class="timeline-position">Government College University, Lahore</div>
+              </div>
+            </div>
+            <div class="timeline-details">
+              <ul>
+                <li><strong>External Grade:</strong> A+ <strong>Internal Grade:</strong> A</li>
+                <li>Class representative junior and senior year</li>
+                <li>Member of Robotics Club and Debate Society</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Experience Section -->
+        <div id="experience" class="journey-section active">
+          <!-- Example Experience Card 1 -->
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <a href="#" target="_blank">
+                <img src="./assets/icons/software-motion.png" alt="Software Motion" class="timeline-logo"/>
+              </a>
+              <div class="timeline-title">
+                <h2>Algorithm Engineer (Sensor Fusion)</h2>
+                <div class="timeline-date">Dec 2024 - Present</div>
+                <div class="timeline-position">Software Motion</div>
+              </div>
+            </div>
+            <div class="timeline-details">
+              <ul>
+                <li>Contributing to object and ego-motion modules of L-2 ADAS by fusing camera and radar data for ACC, AEB, and LCC</li>
+                <li>Developed algorithms for lane lines fusion (Kalman Filters) and tracking (Track-to-Track Association) for LAC and LDW using C</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <a href="#" target="_blank">
+                <img src="./assets/icons/cowlar-design-studio.svg" alt="Cowlar Design Studio" class="timeline-logo"/>
+              </a>
+              <div class="timeline-title">
+                <h2>Team Lead, Industrial Automation</h2>
+                <div class="timeline-date">Sep 2024 - Oct 2024</div>
+                <div class="timeline-position">Cowlar Design Studio</div>
+              </div>
+            </div>
+            <div class="timeline-details">
+              <ul>
+                <li>Led a team of 5 to automate fiber assembly processes using custom AI-powered robots, resulting in 4x throughput increase</li>
+                <li>Directed client communication, weekly meetings, and task delegation to deliver mission-critical support for production robots</li>
+                <li>Contributed to component integration, optimized control logic and data flow, driving improvements in automation performance</li>
+              </ul>
+              <div class="award-badge">
+                <i class="fas fa-award award-icon"></i>
+                <span><strong>Houston Award:</strong> Awarded for exceptional leadership and performance in industrial autoamtion sector</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <a href="#" target="_blank">
+                <img src="./assets/icons/cowlar-design-studio.svg" alt="Cowlar Design Studio" class="timeline-logo"/>
+              </a>
+              <div class="timeline-title">
+                <h2>Embedded Design Engineer</h2>
+                <div class="timeline-date">Jun 2023 - Aug 2024</div>
+                <div class="timeline-position">Cowlar Design Studio</div>
+              </div>
+            </div>
+            <div class="timeline-details">
+              <ul>
+                <li>Led prototype development of a fiber insertion robot with 250 microns precision in 15 days, leading to successful demo</li>
+                <li>Collaborated with a cross-functional team of 50+ professionals, contributing to 5 Android applications using Kotlin and C</li>
+                <li>Developed ”Sensor App” from scratch, integrating IMU, cameras and barcode scanners, currently deployed in smart carts</li>
+                <li>Automated deployments with Docker and Shell based GitLab runners, improving various pipelines efficiency by upto 60%</li>
+                <li>Created automation scripts for testing, and maintenance using Python and shell scripting, streamlining operational efficiency</li>
+              </ul>
+              <div class="award-badge">
+                <i class="fas fa-award award-icon"></i>
+                <span><strong>Trailblazer:</strong> Honored with Trailblazer title after first self-presentation on annual design retreat</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Example Experience Card 2 -->
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <a href="#" target="_blank">
+                <img src="./assets/icons/qadri-group.png" alt="Qadri Group" class="timeline-logo"/>
+              </a>
+              <div class="timeline-title">
+                <h2>Leaders for Manufacturing Intern</h2>
+                <div class="timeline-date">Summer 2022</div>
+                <div class="timeline-position">Qadri Group</div>
+              </div>
+            </div>
+            <div class="timeline-details">
+              <ul>
+                <li>Conducted ergonomics analysis, tested fixtures designs to improve labor output for 3 parts, improving throughput by 33%</li>
+                <li>Collaborated with multideciplinary team of 3 and presented feasibility reports and solutions, driving informed decision-making</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <a href="#" target="_blank">
+                <img src="./assets/icons/ncra.png" alt="NCRA" class="timeline-logo"/>
+              </a>
+              <div class="timeline-title">
+                <h2>Research and Development Intern</h2>
+                <div class="timeline-date">Summer 2021</div>
+                <div class="timeline-position">National Centre of Robotics and Automation</div>
+              </div>
+            </div>
+            <div class="timeline-details">
+              <ul>
+                <li>Restored a 3D-printed, parallel manipulator-based ”Upper Limb Prosthesis,” enhancing control for people with amputations</li>
+                <li>Programmed linear actuators in C, enabling multi-grasp capabilities to support dexterity and usability for prosthesis users</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div id="footer-container"></div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/components/header.js"></script>
+  <script src="js/components/footer.js"></script>
+  <script>
+    function showSection(sectionId) {
+      // Hide all sections
+      document.querySelectorAll('.journey-section').forEach(section => {
+        section.classList.remove('active');
+      });
+      
+      // Show selected section
+      document.getElementById(sectionId).classList.add('active');
+      
+      // Update active button
+      document.querySelectorAll('.toggle-btn').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      event.currentTarget.classList.add('active');
+    }
+    
+    // Initialize with education section visible
+    document.addEventListener('DOMContentLoaded', function() {
+      // Animate timeline cards
+      const cards = document.querySelectorAll('.timeline-card');
+      cards.forEach((card, index) => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        card.style.transitionDelay = `${index * 0.1}s`;
+        
+        setTimeout(() => {
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
+        }, 500 + (index * 100));
+      });
+    });
+  </script>
+</body>
+</html>

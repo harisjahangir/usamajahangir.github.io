@@ -1,0 +1,29 @@
+/* ===== LAYOUT ===== */
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .section {
+    padding: var(--section-padding) 0;
+  }
+  
+  .section-container {
+    display: flex;
+    gap: var(--gap-lg);
+  }
+  
+  .grid {
+    display: grid;
+  }
+  
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
