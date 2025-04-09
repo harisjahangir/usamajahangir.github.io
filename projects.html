@@ -23,6 +23,9 @@
         </p>
         
         <div class="project-filter-container">
+          <!-- <button class="btn btn-color-2 project-btn active" onclick="filterProjects('featured')">
+            <i class="fas fa-layer-group"></i> Featured
+          </button> -->
           <button class="btn btn-color-2 project-btn active" onclick="filterProjects('all')">
             <i class="fas fa-layer-group"></i> All Projects
           </button>
@@ -35,28 +38,61 @@
           <button class="btn btn-color-2 project-btn" onclick="filterProjects('software')">
             <i class="fas fa-code"></i> Software
           </button>
+          <button class="btn btn-color-2 project-btn" onclick="filterProjects('mechanical')">
+            <i class="fas fa-gear"></i> Mechanical
+          </button>
         </div>
 
         <div class="projects-grid" id="projects-container">
           <!-- Robotics Project Example -->
           <div class="project-card" data-category="robotics">
             <div class="project-image-container">
-              <img src="assets/projects/afs.png" 
+              <img src="assets/projects/byd-han-demo.gif" 
+                   alt="BYD Han Demo" class="project-image">
+              <div class="image-overlay">
+                <!-- <a href="#" class="overlay-icon" title="Demo Video"><i class="fas fa-link"></i></a> -->
+                <!-- <a href="#" class="overlay-icon" title="GitHub Repository"><i class="fab fa-github"></i></a> -->
+                <!-- <a href="#" class="overlay-icon" title="Project Details"><i class="fas fa-info-circle"></i></a> -->
+                <a href="#" class="overlay-icon" title="Industrial Project"><i class="fas fa-industry"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">BYD Han Demo (<i class="fas fa-hammer"></i> WiP)</h3>
+              <p class="project-description">
+                Contributing to development of ego motion and camera & radar object sensor fusion for L2 ADAS to enable functionalities including ACC, AEB, and LCC.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">C</span>
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Camera</span>
+                <span class="project-tag">Radar</span>
+                <span class="project-tag">MF4 / BLF / DBC</span>
+                <span class="project-tag">Kalman Filter</span>
+                <span class="project-tag">Track-to-Track Association</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card" data-category="robotics featured">
+            <div class="project-image-container">
+              <img src="assets/projects/afs.gif" 
                    alt="Assistive Feeding System" class="project-image">
               <div class="image-overlay">
-                <a href="#" class="overlay-icon" title="Demo Video"><i class="fas fa-play-circle"></i></a>
+                <a href="https://youtu.be/RmsqwGzjRZM" class="overlay-icon" title="Demo Video"><i class="fas fa-play-circle"></i></a>
                 <!-- <a href="#" class="overlay-icon" title="GitHub Repository"><i class="fab fa-github"></i></a> -->
-                <a href="#" class="overlay-icon" title="Project Details"><i class="fas fa-info-circle"></i></a>
+                <!-- <a href="#" class="overlay-icon" title="Project Details"><i class="fas fa-info-circle"></i></a> -->
+                <a href="#" class="overlay-icon" title="Academic Project"><i class="fas fa-book"></i></a>
               </div>
             </div>
             <div class="project-details">
               <h3 class="project-title">Assistive Feeding System</h3>
               <p class="project-description">
-                Developed a 3D printed 6 Degrees-of-freedom care giver serial robotic manipulator to feed food to patients, disabled and the elderly.
+                Developed a 3D printed 6 Degrees-of-freedom care giver serial robotic manipulator to feed food to patients, disabled and the elderly. Key features include active and passive feeding modes and user control through HMI and remote access from mobile devices.
               </p>
               <div class="project-tags">
                 <span class="project-tag">Python</span>
                 <span class="project-tag">Raspberry Pi 3B</span>
+                <span class="project-tag">Mouth Detection and Localization</span>
                 <span class="project-tag">OpenCV</span>
                 <span class="project-tag">Inverse Kinematics</span>
                 <span class="project-tag">FDM</span>
@@ -72,6 +108,7 @@
                 <!-- <a href="#" class="overlay-icon" title="Demo Video"><i class="fas fa-play-circle"></i></a>
                 <a href="#" class="overlay-icon" title="GitHub Repository"><i class="fab fa-github"></i></a>
                 <a href="#" class="overlay-icon" title="Project Details"><i class="fas fa-info-circle"></i></a> -->
+                <a href="#" class="overlay-icon" title="Industrial Project"><i class="fas fa-industry"></i></a>
               </div>
             </div>
             <div class="project-details">
@@ -100,6 +137,7 @@
                 <!-- <a href="#" class="overlay-icon" title="Demo Video"><i class="fas fa-play-circle"></i></a>
                 <a href="#" class="overlay-icon" title="GitHub Repository"><i class="fab fa-github"></i></a>
                 <a href="#" class="overlay-icon" title="Project Details"><i class="fas fa-info-circle"></i></a> -->
+                <a href="#" class="overlay-icon" title="Industrial Project"><i class="fas fa-industry"></i></a>
               </div>
             </div>
             <div class="project-details">
@@ -119,24 +157,27 @@
 
           <div class="project-card" data-category="robotics">
             <div class="project-image-container">
-              <img src="assets/projects/nerc.png" 
+              <img src="assets/projects/nerc.gif" 
                    alt="Indigenous Fruit Harvesting Robot" class="project-image">
               <div class="image-overlay">
-                <a href="#" class="overlay-icon" title="Demo Video"><i class="fas fa-play-circle"></i></a>
+                <a href="https://youtube.com/shorts/u0WpC-MwnhM" class="overlay-icon" title="Demo Video"><i class="fas fa-play-circle"></i></a>
                 <!-- <a href="#" class="overlay-icon" title="GitHub Repository"><i class="fab fa-github"></i></a> -->
-                <a href="#" class="overlay-icon" title="Project Details"><i class="fas fa-info-circle"></i></a>
+                <!-- <a href="#" class="overlay-icon" title="Project Details"><i class="fas fa-info-circle"></i></a> -->
+                <a href="#" class="overlay-icon" title="Academic Project"><i class="fas fa-book"></i></a>
               </div>
             </div>
             <div class="project-details">
               <h3 class="project-title">Indigenous Fruit Harvesting Robot</h3>
               <p class="project-description">
-                Designed and developed a mobile robot from scratch to harvest fruits in an artificial enviorment using custom plucking mechanism. Competed upto quater final at National Engineering and Robotics Competition 2022.  
+                Designed and developed a mobile robot from scratch to harvest fruits in an artificial enviorment using custom plucking mechanism. Competed upto quater final at country's largest robotics competition "National Engineering and Robotics Competition" 2022.  
               </p>
               <div class="project-tags">
                 <span class="project-tag">C</span>
                 <span class="project-tag">ATMega 328P</span>
                 <span class="project-tag">Line / Wall Following</span>
                 <span class="project-tag">Dual H-Bridge Design</span>
+                <span class="project-tag">Machine Design</span>
+                <span class="project-tag">Structural Analysis</span>
                 <span class="project-tag">FDM</span>
                 
               </div>
@@ -148,9 +189,10 @@
               <img src="assets/projects/upper-limb-prosthesis.png" 
                    alt="Upper Limb Prosthesis" class="project-image">
               <div class="image-overlay">
-                <a href="#" class="overlay-icon" title="Demo Video"><i class="fas fa-play-circle"></i></a>
+                <!-- <a href="#" class="overlay-icon" title="Demo Video"><i class="fas fa-play-circle"></i></a> -->
                 <!-- <a href="#" class="overlay-icon" title="GitHub Repository"><i class="fab fa-github"></i></a> -->
-                <a href="#" class="overlay-icon" title="Project Details"><i class="fas fa-info-circle"></i></a>
+                <!-- <a href="#" class="overlay-icon" title="Project Details"><i class="fas fa-info-circle"></i></a> -->
+                <a href="#" class="overlay-icon" title="Academic Project"><i class="fas fa-book"></i></a>
               </div>
             </div>
             <div class="project-details">
@@ -177,13 +219,15 @@
               <div class="image-overlay">
                 <!-- <a href="#" class="overlay-icon" title="Demo Video"><i class="fas fa-play-circle"></i></a>
                 <a href="#" class="overlay-icon" title="GitHub Repository"><i class="fab fa-github"></i></a> -->
-                <a href="#" class="overlay-icon" title="Project Details"><i class="fas fa-info-circle"></i></a>
+                <!-- <a href="#" class="overlay-icon" title="Project Details"><i class="fas fa-info-circle"></i></a> -->
+                <a href="#" class="overlay-icon" title="Industrial Project"><i class="fas fa-industry"></i></a>
+
               </div>
             </div>
             <div class="project-details">
               <h3 class="project-title">Battery Charging Station</h3>
               <p class="project-description">
-                Contributed to the development of a battery charging station for 11.1V smart cart batteries, deployed in retail stores in Qatar.
+                Contributed to the development of a battery charging station for 11.1V smart cart batteries, deployed in retail stores in Qatar. Implemented features including battery data extraction using SMBus over I2C and battery fault diagonostics. 
               </p>
               <div class="project-tags">
                 <span class="project-tag">C</span>
@@ -195,16 +239,96 @@
               </div>
             </div>
           </div>
+
+          <div class="project-card" data-category="embedded">
+            <div class="project-image-container">
+              <img src="assets/projects/sensors-app.gif" 
+                   alt="Sensors App" class="project-image">
+              <div class="image-overlay">
+                <a href="#" class="overlay-icon" title="Smart Cart Details"><i class="fas fa-link"></i></a>
+                <!-- <a href="#" class="overlay-icon" title="GitHub Repository"><i class="fab fa-github"></i></a> -->
+                <!-- <a href="#" class="overlay-icon" title="Project Details"><i class="fas fa-info-circle"></i></a> -->
+                <a href="#" class="overlay-icon" title="Industrial Project"><i class="fas fa-industry"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Sensors App</h3>
+              <p class="project-description">
+                 Developed (As Internal Owner) an Android app to control the pipeline of for sensor (6-axis IMU, Camera, Honeywell barcode scanners, Bluetooth devices) fusion and control. Enabled key features including cart real-time localization, product scanning, theft control, and other misc functionalities . Deployed in smart cart project for retail stores. 
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Kotlin</span>
+                <span class="project-tag">Java-Native-Interface (C)</span>
+                <span class="project-tag">Java</span>
+                <span class="project-tag">Android 12</span>
+                <span class="project-tag">Gradle</span>
+                <span class="project-tag">Linux Device Driver</span>
+              </div>
+            </div>
+          </div>
           
           <!-- Software Project Example -->
           <div class="project-card" data-category="software">
             <div class="project-image-container">
-              <img src="assets/projects/chess-2.png" 
+              <img src="assets/projects/checkout-accelerator.gif" 
+                   alt="checkout-accelerator" class="project-image">
+              <div class="image-overlay">
+                <a href="https://www.cowlardesignstudio.com/solutions/technology/checkoutaccelerator" class="overlay-icon" title="Website"><i class="fas fa-link"></i></a>
+                <!-- <a href="https://github.com/usamajahangir/Chess-2.0" class="overlay-icon" title="GitHub Repository"><i class="fab fa-github"></i></a> -->
+                <!-- <a href="#" class="overlay-icon" title="Project Details"><i class="fas fa-info-circle"></i></a> -->
+                <a href="#" class="overlay-icon" title="Industrial Project"><i class="fas fa-industry"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Checkout Accelerator</h3>
+              <p class="project-description">
+                Developed a multiplatform application enabling faster checkout at cashier and self-service terminals at retail store. Reducing average checkout time of ~60s to ~7s. Deployed in retail store in Qatar.  
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">MQTT</span>
+                <span class="project-tag">Linux OpenSUSE</span>
+                <span class="project-tag">Windows 7</span>
+                <span class="project-tag">HID</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="software">
+            <div class="project-image-container">
+              <img src="assets/projects/mdm-client.png" 
+                   alt="mdm-client" class="project-image">
+              <div class="image-overlay">
+                <a href="https://www.cowlardesignstudio.com/solutions/technology/mdm" class="overlay-icon" title="Website"><i class="fas fa-link"></i></a>
+                <!-- <a href="https://github.com/usamajahangir/Chess-2.0" class="overlay-icon" title="GitHub Repository"><i class="fab fa-github"></i></a> -->
+                <!-- <a href="#" class="overlay-icon" title="Project Details"><i class="fas fa-info-circle"></i></a> -->
+                <a href="#" class="overlay-icon" title="Industrial Project"><i class="fas fa-industry"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Mobile Device Management (MDM)</h3>
+              <p class="project-description">
+                Contributed to the development of MDM Client enabling management of custom applications and requirements. Implemented features including A/B type Over-the-Air Updates and pipelines for child applications.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Kotlin</span>
+                <span class="project-tag">Android 12</span>
+                <span class="project-tag">Gradle</span>
+                <span class="project-tag">App Commisioning</span>
+                <span class="project-tag">OTA</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="software">
+            <div class="project-image-container">
+              <img src="assets/projects/chess-2.gif" 
                    alt="Chess 2.0" class="project-image">
               <div class="image-overlay">
-                <a href="#" class="overlay-icon" title="Demo Video"><i class="fas fa-play-circle"></i></a>
-                <a href="#" class="overlay-icon" title="GitHub Repository"><i class="fab fa-github"></i></a>
-                <a href="#" class="overlay-icon" title="Project Details"><i class="fas fa-info-circle"></i></a>
+                <a href="https://youtu.be/-rmqCQ1hFSs" class="overlay-icon" title="Demo Video"><i class="fas fa-play-circle"></i></a>
+                <a href="https://github.com/usamajahangir/Chess-2.0" class="overlay-icon" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                <!-- <a href="#" class="overlay-icon" title="Project Details"><i class="fas fa-info-circle"></i></a> -->
+                <a href="#" class="overlay-icon" title="Academic Project"><i class="fas fa-book"></i></a>
               </div>
             </div>
             <div class="project-details">
@@ -214,8 +338,9 @@
               </p>
               <div class="project-tags">
                 <span class="project-tag">C++</span>
-                <span class="project-tag">Qt-Creator</span>
+                <span class="project-tag">Qt-5 Framework</span>
                 <span class="project-tag">OOP</span>
+                <span class="project-tag">GUI</span>
                 <span class="project-tag">Windows</span>
               </div>
             </div>
@@ -226,9 +351,10 @@
               <img src="assets/projects/portfolio-website.png" 
                    alt="Portfolio Website" class="project-image">
               <div class="image-overlay">
-                <a href="#" class="overlay-icon" title="Demo Video"><i class="fas fa-play-circle"></i></a>
-                <a href="#" class="overlay-icon" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                <a href="https://usamajahangir.github.io/" class="overlay-icon" title="Visit Website"><i class="fas fa-link"></i></a>
+                <a href="https://github.com/usamajahangir/usamajahangir.github.io" class="overlay-icon" title="GitHub Repository"><i class="fab fa-github"></i></a>
                 <a href="#" class="overlay-icon" title="Project Details"><i class="fas fa-info-circle"></i></a>
+
               </div>
             </div>
             <div class="project-details">
@@ -243,6 +369,78 @@
                 <span class="project-tag">Deepseek</span>
                 <span class="project-tag">Cursor AI</span>
                 <span class="project-tag">Debugging</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card" data-category="software">
+            <div class="project-image-container">
+              <img src="assets/projects/chess-1.gif" 
+                   alt="Chess 1.0" class="project-image">
+              <div class="image-overlay">
+                <a href="https://youtu.be/-rmqCQ1hFSs" class="overlay-icon" title="Demo Video"><i class="fas fa-play-circle"></i></a>
+                <a href="https://github.com/usamajahangir/Chess-2.0" class="overlay-icon" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                <!-- <a href="#" class="overlay-icon" title="Project Details"><i class="fas fa-info-circle"></i></a> -->
+                <a href="#" class="overlay-icon" title="Academic Project"><i class="fas fa-book"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Chess 1.0</h3>
+              <p class="project-description">
+                A command-line based graphical multiplayer chess game for windows from scratch. Key features includes command-line based graphics, menus, game pause and resume, game saving and multiplayer gameplay with all rules.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">C++</span>
+                <span class="project-tag">Cmd based GUI</span>
+                <span class="project-tag">Windows</span>
+              </div>
+            </div>
+          </div>
+
+           <!-- Mechanical Project Example -->
+           <div class="project-card" data-category="mechanical">
+            <div class="project-image-container">
+              <img src="assets/projects/exo-glove.png" 
+                   alt="Exo Glove" class="project-image">
+              <div class="image-overlay">
+                <!-- <a href="https://youtu.be/-rmqCQ1hFSs" class="overlay-icon" title="Demo Video"><i class="fas fa-play-circle"></i></a>
+                <a href="https://github.com/usamajahangir/Chess-2.0" class="overlay-icon" title="GitHub Repository"><i class="fab fa-github"></i></a> -->
+                <!-- <a href="#" class="overlay-icon" title="Project Details"><i class="fas fa-info-circle"></i></a> -->
+                <a href="#" class="overlay-icon" title="Academic Project"><i class="fas fa-book"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Exo Glove</h3>
+              <p class="project-description">
+                A Body Powered, Tendon Driven, Wearable Exo-Glove as Assistive Hand designed for supporting hand movements for Paralysed, Weak or Strokes Patients. 
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">SolidWorks</span>
+                <span class="project-tag">ANSYS</span>
+                <span class="project-tag">Fused Deposition Modelling</span>
+                <span class="project-tag">Differential mechanism</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="mechanical">
+            <div class="project-image-container">
+              <img src="assets/projects/colt.gif" 
+                   alt="Colt 1911" class="project-image">
+              <div class="image-overlay">
+                <!-- <a href="https://youtu.be/-rmqCQ1hFSs" class="overlay-icon" title="Demo Video"><i class="fas fa-play-circle"></i></a> -->
+                <a href="https://grabcad.com/library/colt-1911-16" class="overlay-icon" title="GrabCAD Model"><i class="fas fa-gear"></i></a>
+                <!-- <a href="#" class="overlay-icon" title="Project Details"><i class="fas fa-info-circle"></i></a> -->
+                <a href="#" class="overlay-icon" title="Academic Project"><i class="fas fa-book"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Colt 1911</h3>
+              <p class="project-description">
+                 CAD Model of Colt 1911 pistol consisting of 23 parts and 2 assemblies. Rendered the final model within SolidWorks.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">SolidWorks</span>
               </div>
             </div>
           </div>

@@ -798,7 +798,7 @@ header {
     position: relative;
     padding-left: 1.5rem;
     margin-bottom: 0.5rem;
-    line-height: 1.0;
+    line-height: 1.3;
   }
   
   .timeline-details li::before {

@@ -39,6 +39,11 @@
     color: var(--text-color);
     line-height: 1.6;
   }
+
+  .nav-links li a.active,
+  .menu-links li a.active {
+      font-weight: bold;
+  }
   
   html {
     scroll-behavior: smooth;
